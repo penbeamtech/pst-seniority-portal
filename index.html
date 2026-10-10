@@ -109,6 +109,21 @@
     ]
   };
 
+    /* Technical Support contact — shown in the public support modal.
+     Edit the fields below with the real details. */
+  const TECH_SUPPORT = {
+    name: "Engr. Muhammad Ali",
+    role: "District IT Cell",
+    department: "District Education Office, Shaheed Benazir Abad",
+    picture: "",                       // paste an image URL here (see guide at the end)
+    email: "it.support@sba.edu.pk",
+    mobile: "0302-3993468",
+    whatsapp: "0302-3993468",
+    bio: "Available for technical assistance with form submission, data correction requests, and any portal-related issues. Please mention your Full Name and CNIC when contacting.",
+    availability: "Monday – Saturday · 9:00 AM – 5:00 PM"
+  };
+
+    
   const FORM_STEPS = [
     { id: 1, title: "Personal Identity",     subtitle: "Basic details",           icon: "①" },
     { id: 2, title: "Location & Posting",    subtitle: "District & station",      icon: "②" },
@@ -628,6 +643,212 @@
       </button>
     `;
   }
+
+      function ContactBanner({ onOpen }) {
+    return html`
+      <section className="reveal max-w-[1200px] mx-auto px-4 md:px-8 pt-6 md:pt-10">
+        <div className="relative overflow-hidden rounded-2xl border border-[#2563EB]/20 shadow-[0_8px_30px_-16px_rgba(15,23,42,0.18)]"
+             style=${{ background: "linear-gradient(120deg, #0F172A 0%, #1E293B 60%, #0F172A 100%)" }}>
+          <div className="absolute -right-10 -top-10 w-40 h-40 rounded-full bg-[#2563EB]/30 blur-[40px] pointer-events-none"></div>
+          <div className="absolute -left-10 -bottom-10 w-32 h-32 rounded-full bg-[#06B6D4]/20 blur-[40px] pointer-events-none"></div>
+
+          <div className="relative p-4 md:p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div className="flex items-start gap-3.5 min-w-0">
+              <div className="w-10 h-10 rounded-xl bg-[#2563EB]/25 border border-[#2563EB]/40 flex items-center justify-center text-[#06B6D4] text-[16px] shrink-0">
+                ☎
+              </div>
+              <div className="min-w-0">
+                <div className="inline-flex items-center gap-1.5 text-[10px] font-bold tracking-[0.18em] text-[#06B6D4] uppercase">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse"></span>
+                  Support Available
+                </div>
+                <div className="text-[13px] md:text-[14px] font-semibold text-white mt-1 leading-snug">
+                  For Any Technical Issue or Data Correction: Please Contact
+                </div>
+              </div>
+            </div>
+
+            <button
+              onClick=${onOpen}
+              className="shine shrink-0 h-11 px-5 rounded-full bg-white text-[#0F172A] text-[12px] font-bold hover:bg-slate-100 transition-all hover:scale-[1.03] hover:shadow-[0_12px_32px_-12px_rgba(255,255,255,0.4)] inline-flex items-center gap-2"
+            >
+              Contact Support
+              <span className="w-5 h-5 rounded-full bg-[#2563EB] text-white flex items-center justify-center text-[10px]">→</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  function ContactSupportModal({ open, onClose }) {
+    useEffect(() => {
+      if (!open) return;
+      const onKey = e => { if (e.key === "Escape") onClose(); };
+      window.addEventListener("keydown", onKey);
+      document.body.style.overflow = "hidden";
+      return () => {
+        window.removeEventListener("keydown", onKey);
+        document.body.style.overflow = "";
+      };
+    }, [open, onClose]);
+
+    if (!open) return null;
+
+    const t = TECH_SUPPORT;
+    const telHref  = t.mobile   ? `tel:${t.mobile.replace(/\D/g, "")}` : null;
+    const waHref   = t.whatsapp ? `https://wa.me/92${t.whatsapp.replace(/\D/g, "").replace(/^0/, "")}` : null;
+    const mailHref = t.email    ? `mailto:${t.email}` : null;
+
+    return html`
+      <div
+        className="fixed inset-0 z-[70] flex items-start md:items-center justify-center p-3 sm:p-6 bg-[#0F172A]/75 backdrop-blur-[10px] overflow-y-auto"
+        onClick=${e => { if (e.target === e.currentTarget) onClose(); }}
+      >
+        <div className="w-full max-w-[560px] bg-white rounded-[1.75rem] shadow-[0_32px_80px_-24px_rgba(15,23,42,0.5)] overflow-hidden my-6 md:my-10">
+
+          <div
+            className="relative h-32 sm:h-40 px-6 sm:px-8 flex items-start justify-between pt-5"
+            style=${{ background: "linear-gradient(135deg, #2563EB 0%, #0F172A 140%)" }}
+          >
+            <div className="absolute inset-0 opacity-[0.12]" style=${{ backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)", backgroundSize: "22px 22px" }}></div>
+
+            <div className="relative text-white">
+              <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-white/15 border border-white/20 text-[10px] font-bold tracking-[0.15em] uppercase">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse"></span>
+                Support Online
+              </div>
+              <div className="text-[10px] font-bold tracking-[0.2em] text-white/70 uppercase mt-3">Technical Help Desk</div>
+              <div className="text-[15px] font-semibold text-white/95 mt-0.5">We are here to help</div>
+            </div>
+
+            <button
+              onClick=${onClose}
+              aria-label="Close"
+              className="relative w-9 h-9 rounded-full bg-white/15 border border-white/20 text-white flex items-center justify-center hover:bg-white/25 transition shrink-0"
+            >✕</button>
+          </div>
+
+          <div className="px-6 sm:px-8 pb-8">
+            <div className="-mt-14 sm:-mt-16 mb-6 flex items-end justify-between gap-3">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl border-[5px] border-white shadow-[0_12px_32px_-12px_rgba(15,23,42,0.35)] overflow-hidden relative bg-slate-100 shrink-0">
+                <div
+                  className="absolute inset-0 flex items-center justify-center text-white text-[32px] font-bold"
+                  style=${{ background: "linear-gradient(135deg, #2563EB, #0F172A)" }}
+                >
+                  ${initialsFrom(t.name)}
+                </div>
+                ${t.picture && html`
+                  <img
+                    src=${t.picture}
+                    alt=${t.name}
+                    className="absolute inset-0 w-full h-full object-cover"
+                    onError=${e => e.currentTarget.remove()}
+                  />
+                `}
+              </div>
+              <div className="hidden sm:inline-flex items-center gap-1.5 text-[10px] font-semibold text-[#10B981] bg-[#10B981]/10 border border-[#10B981]/20 px-3 py-1 rounded-full mb-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse"></span>
+                Available Now
+              </div>
+            </div>
+
+            <div>
+              <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-[#2563EB]/10 border border-[#2563EB]/20 text-[10px] font-bold tracking-widest uppercase text-[#2563EB]">
+                ${t.role}
+              </div>
+              <h3 className="mt-3 text-[24px] sm:text-[26px] font-bold tracking-tight leading-tight text-[#0F172A]">
+                ${t.name}
+              </h3>
+              ${t.department && html`
+                <div className="text-[12px] text-slate-500 mt-1.5 flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-slate-300"></span>
+                  <span>${t.department}</span>
+                </div>
+              `}
+            </div>
+
+            ${t.bio && html`
+              <div className="mt-5 p-4 rounded-2xl bg-[#F8FAFC] border border-slate-200">
+                <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400 uppercase mb-1.5">About</div>
+                <div className="text-[13px] text-slate-700 leading-relaxed">${t.bio}</div>
+              </div>
+            `}
+
+            <div className="mt-5">
+              <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400 uppercase mb-3">Get in touch</div>
+              <div className="grid sm:grid-cols-2 gap-3">
+                ${t.mobile && html`
+                  <a
+                    href=${telHref}
+                    className="group flex items-center gap-3 p-4 rounded-2xl border border-slate-200 bg-white hover:bg-[#F8FAFC] hover:border-[#2563EB]/40 transition-all hover:-translate-y-0.5"
+                  >
+                    <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white text-[15px] shrink-0 bg-[#2563EB] group-hover:scale-110 transition-transform">☏</div>
+                    <div className="min-w-0 flex-1">
+                      <div className="text-[10px] font-bold tracking-widest text-slate-400 uppercase">Mobile</div>
+                      <div className="text-[13px] font-semibold text-[#0F172A] font-mono mt-0.5 truncate">${t.mobile}</div>
+                    </div>
+                  </a>
+                `}
+                ${t.whatsapp && html`
+                  <a
+                    href=${waHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-3 p-4 rounded-2xl border border-slate-200 bg-white hover:bg-[#F8FAFC] hover:border-[#10B981]/40 transition-all hover:-translate-y-0.5"
+                  >
+                    <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white text-[15px] shrink-0 bg-[#10B981] group-hover:scale-110 transition-transform">✆</div>
+                    <div className="min-w-0 flex-1">
+                      <div className="text-[10px] font-bold tracking-widest text-slate-400 uppercase">WhatsApp</div>
+                      <div className="text-[13px] font-semibold text-[#0F172A] font-mono mt-0.5 truncate">${t.whatsapp}</div>
+                    </div>
+                  </a>
+                `}
+                ${t.email && html`
+                  <a
+                    href=${mailHref}
+                    className="group flex items-center gap-3 p-4 rounded-2xl border border-slate-200 bg-white hover:bg-[#F8FAFC] hover:border-[#0F172A]/30 transition-all hover:-translate-y-0.5 sm:col-span-2"
+                  >
+                    <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white text-[15px] shrink-0 bg-[#0F172A] group-hover:scale-110 transition-transform">✉</div>
+                    <div className="min-w-0 flex-1">
+                      <div className="text-[10px] font-bold tracking-widest text-slate-400 uppercase">Email</div>
+                      <div className="text-[13px] font-semibold text-[#0F172A] mt-0.5 truncate">${t.email}</div>
+                    </div>
+                  </a>
+                `}
+              </div>
+            </div>
+
+            ${t.availability && html`
+              <div className="mt-4 p-3.5 rounded-xl bg-[#F8FAFC] border border-slate-200 flex items-center gap-3">
+                <div className="w-9 h-9 rounded-lg bg-[#10B981]/10 flex items-center justify-center text-[#10B981] text-[14px] shrink-0">◷</div>
+                <div>
+                  <div className="text-[10px] font-bold tracking-widest text-slate-400 uppercase">Availability</div>
+                  <div className="text-[12px] font-semibold text-[#0F172A] mt-0.5">${t.availability}</div>
+                </div>
+              </div>
+            `}
+
+            <div className="mt-6 p-3 rounded-xl bg-[#2563EB]/5 border border-[#2563EB]/15 flex items-start gap-2.5">
+              <span className="w-5 h-5 rounded-full bg-[#2563EB] text-white flex items-center justify-center text-[11px] shrink-0 mt-0.5">i</span>
+              <div className="text-[11.5px] text-slate-600 leading-relaxed">
+                When contacting, please include your <strong>Full Name</strong>, <strong>CNIC</strong>, and a short description of the issue. This helps us locate your record instantly.
+              </div>
+            </div>
+
+            <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+              <div className="text-[11px] text-slate-500">Response time: typically within 24 hours.</div>
+              <button
+                onClick=${onClose}
+                className="h-[42px] px-6 rounded-full bg-[#0F172A] text-white text-[12px] font-semibold hover:bg-black transition"
+              >Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
 
   function PTASection({ onViewMember }) {
     return html`
@@ -1277,7 +1498,7 @@
     `;
   }
 
-  function Footer({ onNav }) {
+    function Footer({ onNav, onOpenSupport }) {
     return html`
       <footer className="bg-[#0F172A] text-white/70 border-t border-white/5">
         <div className="max-w-[1200px] mx-auto px-4 md:px-8 py-10 grid md:grid-cols-[1.2fr_0.6fr_0.6fr] gap-8">
@@ -1310,6 +1531,12 @@
               <div>Shaheed Benazir Abad</div>
               <div className="text-white/50">Talukas: Daur • Nawabshah • Sakrand • Kazi Ahmed</div>
               <div className="pt-3">© ${new Date().getFullYear()} District Education Office</div>
+              <button
+                onClick=${onOpenSupport}
+                className="inline-flex items-center gap-1.5 mt-3 px-3 py-1.5 rounded-full bg-[#2563EB]/15 border border-[#2563EB]/30 text-[#06B6D4] hover:bg-[#2563EB]/25 transition text-[11px] font-semibold"
+              >
+                ☎ Contact Support
+              </button>
               <a href="admin.html" className="inline-flex items-center gap-1 mt-2 text-white/40 hover:text-white transition text-[11px]">
                 Staff Access <span>→</span>
               </a>
@@ -1368,6 +1595,7 @@
     const [success, setSuccess] = useState(null);
 
     const [memberModal, setMemberModal] = useState({ open: false, member: null, context: null });
+    const [supportOpen, setSupportOpen] = useState(false);
 
     const formRef = useRef(null);
 
@@ -1502,6 +1730,8 @@ ${`
           onViewGuidelines=${() => navigate("guidelines")}
         />
 
+        <${ContactBanner} onOpen=${() => setSupportOpen(true)} />
+
         <${PTASection} onViewMember=${openMemberModal} />
 
         <${AboutSection} />
@@ -1529,19 +1759,24 @@ ${`
 
         <${FAQSection} />
 
-        <${Footer} onNav=${navigate} />
+        <${Footer} onNav=${navigate} onOpenSupport=${() => setSupportOpen(true)} />
 
         <${BottomNav} active=${activeSection} onNav=${navigate} />
 
         <div className="pb-32" aria-hidden="true"></div>
 
-        ${memberModal.open && html`
+          ${memberModal.open && html`
           <${PtaMemberModal}
             member=${memberModal.member}
             context=${memberModal.context}
             onClose=${closeMemberModal}
           />
         `}
+
+        <${ContactSupportModal}
+          open=${supportOpen}
+          onClose=${() => setSupportOpen(false)}
+        />
       </div>
     `;
   }
