@@ -464,7 +464,7 @@
 
   /* ---------- 4. Layout ---------- */
 
-  function Sidebar({ open, onClose, active, onNavigate, onLogout }) {
+    function Sidebar({ open, onClose, active, onNavigate, onLogout }) {
     const items = [
       { id: "overview",      label: "Overview",     icon: "◧" },
       { id: "submissions",   label: "Submissions",  icon: "☰" },
@@ -472,14 +472,12 @@
       { id: "settings",      label: "Settings",     icon: "⚙" }
     ];
     return html`
-      <>
-        
+      <${React.Fragment}>
         <div
           className=${`fixed inset-0 z-30 bg-[#0F172A]/60 backdrop-blur-[10px] lg:hidden transition ${open ? "opacity-100" : "opacity-0 pointer-events-none"}`}
           onClick=${onClose}
         ></div>
 
-        
         <aside className=${`fixed inset-y-0 left-0 z-40 w-64 bg-[#0F172A] text-white transition-transform duration-300 ${open ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0 flex flex-col`}>
           <div className="h-16 flex items-center gap-3 px-5 border-b border-white/5">
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#2563EB] to-[#06B6D4] flex items-center justify-center text-white font-bold text-[15px]">P</div>
@@ -525,7 +523,7 @@
             </div>
           </div>
         </aside>
-      </>
+      </${React.Fragment}>
     `;
   }
 
@@ -2069,8 +2067,8 @@ function doGet(e) {
     `;
   }
 
-  ReactDOM.createRoot(document.getElementById("root")).render(
-    html`<${React.StrictMode}><${AdminApp} /><//>`
+    ReactDOM.createRoot(document.getElementById("root")).render(
+    React.createElement(React.StrictMode, null, React.createElement(AdminApp))
   );
   </script>
 </body>
