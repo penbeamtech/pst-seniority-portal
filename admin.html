@@ -1,0 +1,2077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0F172A" />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <title>Admin Panel — PST Seniority Portal</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230F172A'/%3E%3Ctext x='50' y='68' font-size='56' font-weight='800' font-family='Inter,sans-serif' fill='%232563EB' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+  <style>
+    *,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.18 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0}.inset-y-0{top:0;bottom:0}.left-0{left:0}.right-0{right:0}.top-0{top:0}.-z-10{z-index:-10}.z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.z-\[60\]{z-index:60}.z-\[70\]{z-index:70}.z-\[80\]{z-index:80}.mx-auto{margin-left:auto;margin-right:auto}.my-2{margin-top:.5rem;margin-bottom:.5rem}.my-4{margin-top:1rem;margin-bottom:1rem}.my-6{margin-top:1.5rem;margin-bottom:1.5rem}.-mt-1{margin-top:-.25rem}.mb-1{margin-bottom:.25rem}.mb-3{margin-bottom:.75rem}.mb-6{margin-bottom:1.5rem}.ml-1{margin-left:.25rem}.ml-2{margin-left:.5rem}.ml-3{margin-left:.75rem}.mr-2{margin-right:.5rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.mt-10{margin-top:2.5rem}.block{display:block}.inline-block{display:inline-block}.inline-flex{display:inline-flex}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-1{height:.25rem}.h-1\.5{height:.375rem}.h-2{height:.5rem}.h-3{height:.75rem}.h-3\.5{height:.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-20{height:5rem}.h-24{height:6rem}.h-full{height:100%}.h-px{height:1px}.max-h-\[90vh\]{max-height:90vh}.max-h-\[460px\]{max-height:460px}.min-h-screen{min-height:100vh}.w-1{width:.25rem}.w-1\.5{width:.375rem}.w-2{width:.5rem}.w-3{width:.75rem}.w-3\.5{width:.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-7{width:1.75rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-20{width:5rem}.w-64{width:16rem}.w-72{width:18rem}.w-full{width:100%}.w-fit{width:fit-content}.max-w-\[1200px\]{max-width:1200px}.max-w-\[200px\]{max-width:200px}.max-w-\[240px\]{max-width:240px}.max-w-\[380px\]{max-width:380px}.max-w-\[420px\]{max-width:420px}.max-w-\[520px\]{max-width:520px}.max-w-\[760px\]{max-width:760px}.max-w-\[920px\]{max-width:920px}.max-w-\[1100px\]{max-width:1100px}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-full{--tw-translate-x:-100%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-0{--tw-translate-x:0px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.animate-spin{animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.cursor-not-allowed{cursor:not-allowed}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.resize-none{resize:none}.list-inside{list-style-position:inside}.list-decimal{list-style-type:decimal}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-end{justify-content:flex-end}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.space-y-5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem*var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.divide-y>:not([hidden])~:not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px*(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px*var(--tw-divide-y-reverse))}.divide-slate-100>:not([hidden])~:not([hidden]){--tw-divide-opacity:1;border-color:rgb(241 245 249/var(--tw-divide-opacity,1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-x-hidden{overflow-x:hidden}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-\[1\.25rem\]{border-radius:1.25rem}.rounded-\[1\.5rem\]{border-radius:1.5rem}.rounded-\[1\.75rem\]{border-radius:1.75rem}.rounded-\[11px\]{border-radius:11px}.rounded-\[2rem\]{border-radius:2rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-\[\#0F172A\]{--tw-border-opacity:1;border-color:rgb(15 23 42/var(--tw-border-opacity,1))}.border-\[\#10B981\]{--tw-border-opacity:1;border-color:rgb(16 185 129/var(--tw-border-opacity,1))}.border-\[\#2563EB\]{--tw-border-opacity:1;border-color:rgb(37 99 235/var(--tw-border-opacity,1))}.border-red-300{--tw-border-opacity:1;border-color:rgb(252 165 165/var(--tw-border-opacity,1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249/var(--tw-border-opacity,1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity,1))}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225/var(--tw-border-opacity,1))}.border-transparent{border-color:transparent}.border-white\/5{border-color:rgba(255,255,255,.05)}.border-white\/10{border-color:rgba(255,255,255,.1)}.border-white\/15{border-color:rgba(255,255,255,.15)}.border-white\/20{border-color:rgba(255,255,255,.2)}.border-t-transparent{border-top-color:transparent}.bg-\[\#0F172A\]{--tw-bg-opacity:1;background-color:rgb(15 23 42/var(--tw-bg-opacity,1))}.bg-\[\#0F172A\]\/60{background-color:rgba(15,23,42,.6)}.bg-\[\#0F172A\]\/75{background-color:rgba(15,23,42,.75)}.bg-\[\#0F172A\]\/80{background-color:rgba(15,23,42,.8)}.bg-\[\#10B981\]{--tw-bg-opacity:1;background-color:rgb(16 185 129/var(--tw-bg-opacity,1))}.bg-\[\#10B981\]\/10{background-color:rgba(16,185,129,.1)}.bg-\[\#2563EB\]{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.bg-\[\#2563EB\]\/10{background-color:rgba(37,99,235,.1)}.bg-\[\#F8FAFC\]{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity,1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242/var(--tw-bg-opacity,1))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68/var(--tw-bg-opacity,1))}.bg-red-500\/10{background-color:rgba(239,68,68,.1)}.bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38/var(--tw-bg-opacity,1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity,1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/5{background-color:rgba(255,255,255,.05)}.bg-white\/10{background-color:rgba(255,255,255,.1)}.bg-white\/15{background-color:rgba(255,255,255,.15)}.bg-white\/20{background-color:rgba(255,255,255,.2)}.bg-white\/\[0\.03\]{background-color:rgba(255,255,255,.03)}.bg-white\/\[0\.04\]{background-color:rgba(255,255,255,.04)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-\[\#0F172A\]{--tw-gradient-from:#0f172a var(--tw-gradient-from-position);--tw-gradient-to:rgba(15,23,42,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-\[\#2563EB\]{--tw-gradient-from:#2563eb var(--tw-gradient-from-position);--tw-gradient-to:rgba(37,99,235,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.via-\[\#0F172A\]{--tw-gradient-to:rgba(15,23,42,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),#0f172a var(--tw-gradient-via-position),var(--tw-gradient-to)}.to-\[\#06B6D4\]{--tw-gradient-to:#06b6d4 var(--tw-gradient-to-position)}.to-\[\#0F172A\]{--tw-gradient-to:#0f172a var(--tw-gradient-to-position)}.object-cover{-o-object-fit:cover;object-fit:cover}.p-0{padding:0}.p-1{padding:.25rem}.p-2{padding:.5rem}.p-2\.5{padding:.625rem}.p-3{padding:.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-7{padding:1.75rem}.p-8{padding:2rem}.p-10{padding:2.5rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-7{padding-left:1.75rem;padding-right:1.75rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.pb-3{padding-bottom:.75rem}.pb-6{padding-bottom:1.5rem}.pt-4{padding-top:1rem}.pt-5{padding-top:1.25rem}.pt-6{padding-top:1.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-\[9px\]{font-size:9px}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[12px\]{font-size:12px}.text-\[13px\]{font-size:13px}.text-\[13\.5px\]{font-size:13.5px}.text-\[14px\]{font-size:14px}.text-\[15px\]{font-size:15px}.text-\[16px\]{font-size:16px}.text-\[17px\]{font-size:17px}.text-\[18px\]{font-size:18px}.text-\[20px\]{font-size:20px}.text-\[22px\]{font-size:22px}.text-\[24px\]{font-size:24px}.text-\[28px\]{font-size:28px}.text-\[32px\]{font-size:32px}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-\[0\.08em\]{letter-spacing:.08em}.tracking-\[0\.14em\]{letter-spacing:.14em}.tracking-\[0\.15em\]{letter-spacing:.15em}.tracking-\[0\.18em\]{letter-spacing:.18em}.tracking-\[0\.2em\]{letter-spacing:.2em}.tracking-\[0\.3em\]{letter-spacing:.3em}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-widest{letter-spacing:.1em}.text-\[\#06B6D4\]{--tw-text-opacity:1;color:rgb(6 182 212/var(--tw-text-opacity,1))}.text-\[\#0F172A\]{--tw-text-opacity:1;color:rgb(15 23 42/var(--tw-text-opacity,1))}.text-\[\#10B981\]{--tw-text-opacity:1;color:rgb(16 185 129/var(--tw-text-opacity,1))}.text-\[\#2563EB\]{--tw-text-opacity:1;color:rgb(37 99 235/var(--tw-text-opacity,1))}.text-\[\#E2E8F0\]{--tw-text-opacity:1;color:rgb(226 232 240/var(--tw-text-opacity,1))}.text-red-200{--tw-text-opacity:1;color:rgb(254 202 202/var(--tw-text-opacity,1))}.text-red-300{--tw-text-opacity:1;color:rgb(252 165 165/var(--tw-text-opacity,1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68/var(--tw-text-opacity,1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38/var(--tw-text-opacity,1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28/var(--tw-text-opacity,1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240/var(--tw-text-opacity,1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105/var(--tw-text-opacity,1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity,1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.text-white\/30{color:rgba(255,255,255,.3)}.text-white\/40{color:rgba(255,255,255,.4)}.text-white\/50{color:rgba(255,255,255,.5)}.text-white\/60{color:rgba(255,255,255,.6)}.text-white\/70{color:rgba(255,255,255,.7)}.text-white\/80{color:rgba(255,255,255,.8)}.text-white\/90{color:rgba(255,255,255,.9)}.underline{text-decoration-line:underline}.opacity-0{opacity:0}.opacity-50{opacity:.5}.opacity-60{opacity:.6}.opacity-70{opacity:.7}.opacity-100{opacity:1}.shadow{--tw-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_1px_3px_0_rgba\(15\2c 23\2c 42\2c 0\.06\)\]{--tw-shadow:0 1px 3px 0 rgba(15,23,42,.06);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_4px_16px_-8px_rgba\(15\2c 23\2c 42\2c 0\.12\)\]{--tw-shadow:0 4px 16px -8px rgba(15,23,42,.12);--tw-shadow-colored:0 4px 16px -8px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_8px_24px_-12px_rgba\(15\2c 23\2c 42\2c 0\.12\)\]{--tw-shadow:0 8px 24px -12px rgba(15,23,42,.12);--tw-shadow-colored:0 8px 24px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_20px_60px_-24px_rgba\(15\2c 23\2c 42\2c 0\.25\)\]{--tw-shadow:0 20px 60px -24px rgba(15,23,42,.25);--tw-shadow-colored:0 20px 60px -24px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_24px_64px_-16px_rgba\(0\2c 0\2c 0\2c 0\.5\)\]{--tw-shadow:0 24px 64px -16px rgba(0,0,0,.5);--tw-shadow-colored:0 24px 64px -16px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_32px_80px_-24px_rgba\(15\2c 23\2c 42\2c 0\.35\)\]{--tw-shadow:0 32px 80px -24px rgba(15,23,42,.35);--tw-shadow-colored:0 32px 80px -24px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.ring-\[\#2563EB\]\/30{--tw-ring-color:rgba(37,99,235,.3)}.blur-\[40px\]{--tw-blur:blur(40px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-\[10px\]{--tw-backdrop-blur:blur(10px);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-200{transition-duration:.2s}.duration-300{transition-duration:.3s}.duration-500{transition-duration:.5s}.duration-700{transition-duration:.7s}#root,body,html{min-height:100%}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif}[role=button]:not([aria-disabled=true]),button:not(:disabled),label[for],select:not(:disabled),summary{cursor:pointer}.hover\:bg-\[\#0ea76e\]:hover{--tw-bg-opacity:1;background-color:rgb(14 167 110/var(--tw-bg-opacity,1))}.hover\:bg-\[\#1d4ed8\]:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216/var(--tw-bg-opacity,1))}.hover\:bg-black:hover{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity,1))}.hover\:bg-red-600:hover{--tw-bg-opacity:1;background-color:rgb(220 38 38/var(--tw-bg-opacity,1))}.hover\:bg-red-700:hover{--tw-bg-opacity:1;background-color:rgb(185 28 28/var(--tw-bg-opacity,1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity,1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.hover\:bg-white\/5:hover{background-color:rgba(255,255,255,.05)}.hover\:bg-white\/10:hover{background-color:rgba(255,255,255,.1)}.hover\:bg-white\/15:hover{background-color:rgba(255,255,255,.15)}.hover\:bg-white\/20:hover{background-color:rgba(255,255,255,.2)}.hover\:border-slate-300:hover{--tw-border-opacity:1;border-color:rgb(203 213 225/var(--tw-border-opacity,1))}.hover\:text-\[\#0F172A\]:hover{--tw-text-opacity:1;color:rgb(15 23 42/var(--tw-text-opacity,1))}.hover\:text-red-700:hover{--tw-text-opacity:1;color:rgb(185 28 28/var(--tw-text-opacity,1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.focus\:border-\[\#2563EB\]:focus{--tw-border-opacity:1;border-color:rgb(37 99 235/var(--tw-border-opacity,1))}.focus\:ring-4:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-\[\#2563EB\]\/10:focus{--tw-ring-color:rgba(37,99,235,.1)}@media (min-width:640px){.sm\:block{display:block}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}}@media (min-width:768px){.md\:block{display:block}.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.md\:grid-cols-\[1\.4fr_1fr\]{grid-template-columns:1.4fr 1fr}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:p-6{padding:1.5rem}.md\:p-8{padding:2rem}.md\:text-\[18px\]{font-size:18px}.md\:text-\[20px\]{font-size:20px}.md\:text-\[24px\]{font-size:24px}.md\:text-\[28px\]{font-size:28px}.md\:text-\[36px\]{font-size:36px}}@media (min-width:1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.lg\:ml-64{margin-left:16rem}.lg\:block{display:block}.lg\:hidden{display:none}.lg\:translate-x-0{--tw-translate-x:0px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+  </style>
+</head>
+<body>
+  <noscript>
+    <div style="padding:2.5rem;font-family:system-ui,sans-serif;text-align:center;max-width:520px;margin:2rem auto;background:#fff;border-radius:16px;border:1px solid #e2e8f0">
+      <h1 style="font-size:1.5rem;margin:0 0 .5rem">Admin Panel</h1>
+      <p style="color:#64748b;margin:0">JavaScript is required. Please enable JavaScript and reload the page.</p>
+    </div>
+  </noscript>
+
+  <div id="root"></div>
+
+  <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/htm@3.1.1/dist/htm.umd.js"></script>
+
+  <script>
+  /* ============================================================
+     PST Seniority — Admin Panel (standalone)
+     ------------------------------------------------------------
+     A separate, professional admin workspace.
+     Sections:
+       1. Configuration
+       2. Helpers
+       3. Auth
+       4. Layout (sidebar, topbar)
+       5. Views (overview, submissions, settings)
+       6. Detail / edit modal + PDF export
+       7. Main app
+     ============================================================ */
+
+  const { useState, useEffect, useRef, useMemo } = React;
+  const html = htm.bind(React.createElement);
+
+  /* ---------- 1. Configuration ---------- */
+
+  const ADMIN_PIN = "1122"; // change here to rotate the PIN
+
+  const SHEET_HEADERS = [
+    "Email Address", "Full Name", "Father's Name", "Gender",
+    "Mobile Number", "WhatsApp Number", "CNIC Number", "PID / Employee ID No.",
+    "District", "District Manual", "Taluka", "Taluka Manual", "UC / TC",
+    "Place of Posting Initial", "Semis Code Initial",
+    "Place of Posting Current", "Semis Code Current",
+    "Cader", "Designation Initial", "Designation Initial Manual", "BPS Initial",
+    "Designation Current", "Designation Current Manual", "BPS Current",
+    "Date of Birth", "Date of Appointment", "Date of Regularization",
+    "Academic Qualification", "Academic Qualification Manual",
+    "Professional Qualification", "Professional Qualification Manual",
+    "Date of B.Ed Result Declaration", "STEDA Teaching Licence",
+    "PST joining Date in District Shaheed Benazir Abad",
+    "Remarks", "Submission Timestamp"
+  ];
+
+  const TALUKA_OPTIONS = ["Daur", "Nawabshah", "Sakrand", "Kazi Ahmed", "Others"];
+
+  const TALUKA_SHEETS = {
+    "Daur":       "Responses_Daur",
+    "Nawabshah":  "Responses_Nawabshah",
+    "Sakrand":    "Responses_Sakrand",
+    "Kazi Ahmed": "Responses_KaziAhmed",
+    "Others":     "Responses_Others"
+  };
+
+  const TALUKA_META = {
+    "Daur":       { accent: "#2563EB", short: "DR" },
+    "Nawabshah":  { accent: "#06B6D4", short: "NS" },
+    "Sakrand":    { accent: "#10B981", short: "SK" },
+    "Kazi Ahmed": { accent: "#8B5CF6", short: "KA" },
+    "Others":     { accent: "#64748B", short: "OT" }
+  };
+
+  const FORM_SECTIONS = [
+    { title: "Personal Identity", fields: [
+      ["Email Address", "Email"], ["Full Name", "Full Name"], ["Father's Name", "Father's Name"],
+      ["Gender", "Gender"], ["Mobile Number", "Mobile"], ["WhatsApp Number", "WhatsApp"],
+      ["CNIC Number", "CNIC"], ["Date of Birth", "Date of Birth"]
+    ]},
+    { title: "Location & Posting", fields: [
+      ["PID / Employee ID No.", "PID"], ["District", "District"], ["District Manual", "District (Manual)"],
+      ["Taluka", "Taluka"], ["Taluka Manual", "Taluka (Manual)"], ["UC / TC", "UC / TC"],
+      ["Place of Posting Initial", "Posting Initial"], ["Semis Code Initial", "Semis Initial"],
+      ["Place of Posting Current", "Posting Current"], ["Semis Code Current", "Semis Current"]
+    ]},
+    { title: "Designation & Service", fields: [
+      ["Cader", "Cader"], ["Designation Initial", "Designation Initial"],
+      ["Designation Initial Manual", "Designation Initial (Manual)"],
+      ["BPS Initial", "BPS Initial"], ["Designation Current", "Designation Current"],
+      ["Designation Current Manual", "Designation Current (Manual)"],
+      ["BPS Current", "BPS Current"], ["Date of Appointment", "Date of Appointment"],
+      ["Date of Regularization", "Date of Regularization"], ["PST joining Date in District Shaheed Benazir Abad", "PST Joining Date"]
+    ]},
+    { title: "Qualifications", fields: [
+      ["Academic Qualification", "Academic"], ["Academic Qualification Manual", "Academic (Manual)"],
+      ["Professional Qualification", "Professional"], ["Professional Qualification Manual", "Professional (Manual)"],
+      ["Date of B.Ed Result Declaration", "B.Ed Result Date"], ["STEDA Teaching Licence", "STEDA Licence"]
+    ]},
+    { title: "Remarks", fields: [["Remarks", "Remarks"]] }
+  ];
+
+  /* ---------- 2. Helpers ---------- */
+
+  const todayISO = () => new Date().toISOString().split("T")[0];
+
+  function formatCNIC(raw) {
+    const d = String(raw).replace(/\D/g, "").slice(0, 13);
+    if (d.length <= 5) return d;
+    if (d.length <= 12) return `${d.slice(0, 5)}-${d.slice(5)}`;
+    return `${d.slice(0, 5)}-${d.slice(5, 12)}-${d.slice(12)}`;
+  }
+  function formatPhone(raw) {
+    const d = String(raw).replace(/\D/g, "").slice(0, 11);
+    if (d.length <= 4) return d;
+    return `${d.slice(0, 4)}-${d.slice(4)}`;
+  }
+  function initialsFrom(name) {
+    if (!name || !name.trim()) return "—";
+    const parts = name.trim().split(/\s+/);
+    if (parts.length === 1) return parts[0].charAt(0).toUpperCase();
+    return (parts[0].charAt(0) + parts[parts.length - 1].charAt(0)).toUpperCase();
+  }
+
+  function rowToForm(row) {
+    return {
+      email: row["Email Address"] || "",
+      fullName: row["Full Name"] || "",
+      fatherName: row["Father's Name"] || "",
+      gender: row["Gender"] || "",
+      mobile: row["Mobile Number"] || "",
+      whatsapp: row["WhatsApp Number"] || "",
+      cnic: row["CNIC Number"] || "",
+      dob: row["Date of Birth"] || "",
+      pid: row["PID / Employee ID No."] || "",
+      district: row["District"] || "",
+      districtManual: row["District Manual"] || "",
+      taluka: row["Taluka"] || "",
+      talukaManual: row["Taluka Manual"] || "",
+      ucTc: row["UC / TC"] || "",
+      postingInitial: row["Place of Posting Initial"] || "",
+      semisInitial: row["Semis Code Initial"] || "",
+      postingCurrent: row["Place of Posting Current"] || "",
+      semisCurrent: row["Semis Code Current"] || "",
+      cader: row["Cader"] || "",
+      desigInitial: row["Designation Initial"] || "",
+      desigInitialManual: row["Designation Initial Manual"] || "",
+      bpsInitial: row["BPS Initial"] || "",
+      desigCurrent: row["Designation Current"] || "",
+      desigCurrentManual: row["Designation Current Manual"] || "",
+      bpsCurrent: row["BPS Current"] || "",
+      doa: row["Date of Appointment"] || "",
+      dor: row["Date of Regularization"] || "",
+      pstJoining: row["PST joining Date in District Shaheed Benazir Abad"] || "",
+      academic: row["Academic Qualification"] || "",
+      academicManual: row["Academic Qualification Manual"] || "",
+      professional: row["Professional Qualification"] || "",
+      professionalManual: row["Professional Qualification Manual"] || "",
+      bedResult: row["Date of B.Ed Result Declaration"] || "",
+      steda: row["STEDA Teaching Licence"] || "",
+      remarks: row["Remarks"] || ""
+    };
+  }
+
+  function buildPayload(form) {
+    return {
+      "Email Address": form.email,
+      "Full Name": form.fullName,
+      "Father's Name": form.fatherName,
+      "Gender": form.gender,
+      "Mobile Number": form.mobile,
+      "WhatsApp Number": form.whatsapp,
+      "CNIC Number": form.cnic,
+      "PID / Employee ID No.": form.pid,
+      "District": form.district,
+      "District Manual": form.districtManual,
+      "Taluka": form.taluka,
+      "Taluka Manual": form.talukaManual,
+      "UC / TC": form.ucTc,
+      "Place of Posting Initial": form.postingInitial,
+      "Semis Code Initial": form.semisInitial,
+      "Place of Posting Current": form.postingCurrent,
+      "Semis Code Current": form.semisCurrent,
+      "Cader": form.cader,
+      "Designation Initial": form.desigInitial,
+      "Designation Initial Manual": form.desigInitialManual,
+      "BPS Initial": form.bpsInitial,
+      "Designation Current": form.desigCurrent,
+      "Designation Current Manual": form.desigCurrentManual,
+      "BPS Current": form.bpsCurrent,
+      "Date of Birth": form.dob,
+      "Date of Appointment": form.doa,
+      "Date of Regularization": form.dor,
+      "Academic Qualification": form.academic,
+      "Academic Qualification Manual": form.academicManual,
+      "Professional Qualification": form.professional,
+      "Professional Qualification Manual": form.professionalManual,
+      "Date of B.Ed Result Declaration": form.bedResult,
+      "STEDA Teaching Licence": form.steda,
+      "PST joining Date in District Shaheed Benazir Abad": form.pstJoining,
+      "Remarks": form.remarks
+    };
+  }
+
+  /* Escapes HTML for safe insertion into the PDF window. */
+  function esc(v) {
+    return String(v == null ? "" : v).replace(/[&<>"']/g, m => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    }[m]));
+  }
+
+  /* Opens a print-ready window with the entry as a formatted report. */
+  function exportEntryPdf(entry) {
+    const d = entry.data || {};
+    const taluka = d["Taluka"] || "—";
+    const talukaAccent = (TALUKA_META[taluka] || {}).accent || "#2563EB";
+    const fullName = d["Full Name"] || "Unnamed Entry";
+    const generatedAt = new Date().toLocaleString("en-PK", { timeZone: "Asia/Karachi" });
+
+    const sectionHtml = (title, fields) => {
+      const rows = fields.map(([key, label]) => {
+        const v = d[key];
+        const display = v && String(v).trim() ? esc(v) : '<span class="empty">—</span>';
+        return `<tr><td class="lbl">${esc(label)}</td><td class="val">${display}</td></tr>`;
+      }).join("");
+      return `<section class="sec"><h2>${esc(title)}</h2><table>${rows}</table></section>`;
+    };
+
+    const body = FORM_SECTIONS.map(s => sectionHtml(s.title, s.fields)).join("");
+
+    const doc = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>PST Seniority — ${esc(fullName)}</title>
+<style>
+  @page { size: A4; margin: 16mm 14mm; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #0F172A; margin: 0; padding: 0; font-size: 11pt; line-height: 1.5; }
+  .header { display: flex; align-items: center; gap: 14px; padding-bottom: 14px; border-bottom: 2px solid #0F172A; }
+  .logo { width: 52px; height: 52px; border-radius: 12px; background: #0F172A; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 22pt; }
+  .brand h1 { margin: 0; font-size: 15pt; font-weight: 800; letter-spacing: -0.01em; }
+  .brand .sub { color: #64748B; font-size: 9pt; letter-spacing: 0.12em; font-weight: 700; margin-top: 2px; }
+  .meta { margin-left: auto; text-align: right; font-size: 9pt; color: #64748B; }
+  .meta strong { color: #0F172A; display: block; font-size: 10pt; font-weight: 700; }
+  .banner { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 18px; }
+  .banner .title { font-size: 13pt; font-weight: 800; letter-spacing: -0.01em; }
+  .banner .ref { font-size: 9.5pt; color: #475569; font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .chip { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 8.5pt; font-weight: 700; color: #fff; background: ${talukaAccent}; letter-spacing: 0.05em; text-transform: uppercase; }
+  .sec { margin-top: 20px; page-break-inside: avoid; }
+  .sec h2 { font-size: 9.5pt; letter-spacing: 0.15em; text-transform: uppercase; color: #475569; margin: 0 0 8px 0; padding-bottom: 4px; border-bottom: 1px solid #E2E8F0; }
+  table { width: 100%; border-collapse: collapse; }
+  td { padding: 6px 0; vertical-align: top; }
+  td.lbl { width: 38%; color: #64748B; font-size: 10pt; padding-right: 12px; }
+  td.val { font-weight: 600; color: #0F172A; font-size: 10.5pt; }
+  td.val .empty { color: #CBD5E1; font-weight: 400; }
+  .footer { margin-top: 32px; padding-top: 12px; border-top: 1px solid #E2E8F0; color: #64748B; font-size: 8.5pt; display: flex; justify-content: space-between; }
+  .sig { margin-top: 42px; display: flex; justify-content: space-between; gap: 40px; page-break-inside: avoid; }
+  .sig .box { flex: 1; border-top: 1px solid #94A3B8; padding-top: 6px; font-size: 9pt; color: #475569; }
+  @media print { body { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+</style>
+</head>
+<body onload="window.focus(); setTimeout(function(){ window.print(); }, 250);">
+  <header class="header">
+    <div class="logo">P</div>
+    <div class="brand">
+      <h1>PST Seniority List — 2026</h1>
+      <div class="sub">DISTRICT SHAHEED BENAZIR ABAD</div>
+    </div>
+    <div class="meta">
+      <strong>Official Record</strong>
+      District Education Office<br/>
+      Generated: ${esc(generatedAt)}
+    </div>
+  </header>
+
+  <div class="banner">
+    <div class="title">${esc(fullName)}</div>
+    <div style="text-align:right">
+      <span class="chip">${esc(taluka)} Taluka</span>
+      <div class="ref" style="margin-top:6px">${esc(entry.sheet)} · Row #${entry.rowIndex}</div>
+    </div>
+  </div>
+
+  ${body}
+
+  <div class="sig">
+    <div class="box">Applicant Signature</div>
+    <div class="box">Verified by (PTA Representative)</div>
+    <div class="box">District Education Office</div>
+  </div>
+
+  <footer class="footer">
+    <span>Official portal — Department of Education, Government of Sindh</span>
+    <span>Reference: ${esc(entry.sheet)} #${entry.rowIndex}</span>
+  </footer>
+</body>
+</html>`;
+
+    const w = window.open("", "_blank", "width=900,height=1100");
+    if (!w) {
+      alert("Please allow pop-ups for this site to export PDF.");
+      return;
+    }
+    w.document.open();
+    w.document.write(doc);
+    w.document.close();
+  }
+
+  /* ---------- 3. Auth ---------- */
+
+  function useSession() {
+    const [secret, setSecret] = useState("");
+    const [authed, setAuthed] = useState(false);
+
+    useEffect(() => {
+      try {
+        const saved = sessionStorage.getItem("sba_admin_secret");
+        if (saved) {
+          setSecret(saved);
+          setAuthed(true);
+        }
+      } catch {}
+    }, []);
+
+    const login = (s) => {
+      try { sessionStorage.setItem("sba_admin_secret", s); } catch {}
+      setSecret(s);
+      setAuthed(true);
+    };
+    const logout = () => {
+      try { sessionStorage.removeItem("sba_admin_secret"); } catch {}
+      setSecret("");
+      setAuthed(false);
+    };
+
+    return { secret, authed, login, logout };
+  }
+
+  function LoginScreen({ scriptUrl, setScriptUrl, onLogin, error, setError }) {
+    const [pin, setPin] = useState("");
+    const [localSecret, setLocalSecret] = useState("");
+    const [busy, setBusy] = useState(false);
+    const pinRef = useRef(null);
+
+    useEffect(() => { if (pinRef.current) pinRef.current.focus(); }, []);
+
+    const submit = async () => {
+      setError("");
+      if (pin.trim() !== ADMIN_PIN) { setError("Incorrect PIN."); return; }
+      if (!scriptUrl) { setError("Please enter the Web App URL first."); return; }
+      if (!localSecret) { setError("Please enter the SETUP_SECRET."); return; }
+
+      setBusy(true);
+      try {
+        const res = await fetch(scriptUrl, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({ action: "verify", key: localSecret })
+        });
+        const data = await res.json();
+        if (!data.ok) throw new Error("Invalid SETUP_SECRET.");
+        try { localStorage.setItem("sba_script_url", scriptUrl); } catch {}
+        onLogin(localSecret);
+      } catch (err) {
+        setError(err.message || "Could not verify credentials.");
+      } finally {
+        setBusy(false);
+      }
+    };
+
+    const inputCls = "w-full h-[48px] rounded-xl border border-slate-200 bg-[#F8FAFC] px-4 text-[14px] outline-none transition focus:border-[#2563EB] focus:ring-4 focus:ring-[#2563EB]/10";
+
+    return html`
+      <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-[#0F172A] via-[#0F172A] to-[#2563EB] overflow-x-hidden relative">
+        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-[#06B6D4] opacity-[0.15] blur-[40px]"></div>
+        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-[#2563EB] opacity-[0.2] blur-[40px]"></div>
+
+        <div className="relative w-full max-w-[420px] bg-white rounded-[2rem] shadow-[0_32px_80px_-24px_rgba(15,23,42,0.35)] border border-slate-100 p-8 md:p-10">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-2xl bg-[#0F172A] flex items-center justify-center text-white font-bold text-[20px]">A</div>
+            <div>
+              <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400 uppercase">Admin Panel</div>
+              <div className="text-[17px] font-bold text-[#0F172A] tracking-tight">PST Seniority Portal</div>
+            </div>
+          </div>
+
+          <h2 className="mt-8 text-[24px] font-bold tracking-tight text-[#0F172A]">Sign in to continue</h2>
+          <p className="mt-1 text-[13px] text-slate-500">Authorized District Education & PTA officials only.</p>
+
+          <div className="mt-6 space-y-4">
+            <div>
+              <label className="text-[11px] font-bold tracking-[0.08em] text-slate-700 uppercase">Web App URL</label>
+              <input
+                value=${scriptUrl}
+                onChange=${e => setScriptUrl(e.target.value)}
+                placeholder="https://script.google.com/macros/s/.../exec"
+                className=${`mt-2 ${inputCls} font-mono text-[12px]`}
+              />
+              <div className="mt-1 text-[10px] text-slate-400">Saved automatically after successful sign-in.</div>
+            </div>
+
+            <div>
+              <label className="text-[11px] font-bold tracking-[0.08em] text-slate-700 uppercase">Admin PIN</label>
+              <input
+                ref=${pinRef}
+                type="password"
+                inputMode="numeric"
+                value=${pin}
+                onChange=${e => setPin(e.target.value)}
+                onKeyDown=${e => { if (e.key === "Enter") submit(); }}
+                placeholder="••••"
+                className=${`mt-2 ${inputCls} text-center font-mono tracking-[0.3em] text-[16px]`}
+              />
+            </div>
+
+            <div>
+              <label className="text-[11px] font-bold tracking-[0.08em] text-slate-700 uppercase">Setup Secret</label>
+              <input
+                type="password"
+                value=${localSecret}
+                onChange=${e => setLocalSecret(e.target.value)}
+                onKeyDown=${e => { if (e.key === "Enter") submit(); }}
+                placeholder="Enter your SETUP_SECRET"
+                className=${`mt-2 ${inputCls} font-mono text-[12px]`}
+              />
+              <div className="mt-1 text-[10px] text-slate-400">Stored in Apps Script → Project Settings → Script Properties.</div>
+            </div>
+
+            ${error && html`
+              <div className="rounded-xl bg-red-50 border border-red-300 p-3 text-[12px] text-red-700 flex items-center gap-2">
+                <span className="w-5 h-5 rounded-full bg-red-500 text-white flex items-center justify-center text-[11px] shrink-0">!</span>
+                ${error}
+              </div>
+            `}
+
+            <button
+              onClick=${submit}
+              disabled=${busy}
+              className="w-full h-[48px] rounded-xl bg-[#0F172A] text-white font-semibold text-[14px] hover:bg-black transition flex items-center justify-center gap-2 disabled:opacity-70"
+            >
+              ${busy
+                ? html`<span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></span> Verifying...`
+                : html`Sign In →`}
+            </button>
+          </div>
+
+          <div className="mt-6 pt-6 border-t border-slate-100 text-center">
+            <a href="index.html" className="text-[11px] text-slate-400 hover:text-[#0F172A] transition">← Back to public portal</a>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  /* ---------- 4. Layout ---------- */
+
+  function Sidebar({ open, onClose, active, onNavigate, onLogout }) {
+    const items = [
+      { id: "overview",      label: "Overview",     icon: "◧" },
+      { id: "submissions",   label: "Submissions",  icon: "☰" },
+      { id: "talukas",       label: "Taluka Views", icon: "◉" },
+      { id: "settings",      label: "Settings",     icon: "⚙" }
+    ];
+    return html`
+      <>
+        <!-- Mobile backdrop -->
+        <div
+          className=${`fixed inset-0 z-30 bg-[#0F172A]/60 backdrop-blur-[10px] lg:hidden transition ${open ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+          onClick=${onClose}
+        ></div>
+
+        <!-- Sidebar -->
+        <aside className=${`fixed inset-y-0 left-0 z-40 w-64 bg-[#0F172A] text-white transition-transform duration-300 ${open ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0 flex flex-col`}>
+          <div className="h-16 flex items-center gap-3 px-5 border-b border-white/5">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#2563EB] to-[#06B6D4] flex items-center justify-center text-white font-bold text-[15px]">P</div>
+            <div className="leading-tight">
+              <div className="text-[13px] font-bold tracking-tight">PST Admin</div>
+              <div className="text-[9px] tracking-[0.18em] text-white/40 font-bold">SHAHEED BENAZIR ABAD</div>
+            </div>
+            <button
+              onClick=${onClose}
+              className="lg:hidden ml-auto w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-white/70 hover:bg-white/10"
+            >✕</button>
+          </div>
+
+          <nav className="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
+            <div className="text-[10px] font-bold tracking-[0.18em] text-white/30 px-3 py-2">WORKSPACE</div>
+            ${items.map(it => html`
+              <button
+                key=${it.id}
+                onClick=${() => { onNavigate(it.id); onClose(); }}
+                className=${`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-[13px] font-medium transition ${
+                  active === it.id
+                    ? "bg-white/10 text-white border-l-2 border-[#2563EB]"
+                    : "text-white/60 hover:text-white hover:bg-white/5 border-l-2 border-transparent"
+                }`}
+              >
+                <span className="w-6 text-center text-[14px]">${it.icon}</span>
+                <span>${it.label}</span>
+              </button>
+            `)}
+          </nav>
+
+          <div className="p-3 border-t border-white/5">
+            <button
+              onClick=${onLogout}
+              className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-[13px] font-medium text-white/60 hover:text-white hover:bg-white/5 transition"
+            >
+              <span className="w-6 text-center text-[14px]">⏻</span>
+              <span>Sign Out</span>
+            </button>
+            <div className="mt-3 px-3 py-2 rounded-xl bg-white/[0.03] border border-white/5">
+              <div className="text-[9px] font-bold tracking-[0.18em] text-white/30">SIGNED IN AS</div>
+              <div className="text-[11px] text-white/70 mt-0.5">District Admin</div>
+            </div>
+          </div>
+        </aside>
+      </>
+    `;
+  }
+
+  function Topbar({ title, subtitle, onMenuToggle, onRefresh, refreshing, onExportAll }) {
+    return html`
+      <header className="sticky top-0 z-20 bg-white/85 backdrop-blur-[10px] border-b border-slate-200 h-16 flex items-center px-4 md:px-6 gap-3">
+        <button
+          onClick=${onMenuToggle}
+          className="lg:hidden w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center text-[#0F172A] hover:bg-slate-200"
+        >
+          <span className="text-[16px]">☰</span>
+        </button>
+
+        <div className="min-w-0 flex-1">
+          <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400 uppercase">${subtitle}</div>
+          <div className="text-[17px] md:text-[18px] font-bold text-[#0F172A] tracking-tight truncate">${title}</div>
+        </div>
+
+        <div className="flex items-center gap-2">
+          ${onExportAll && html`
+            <button
+              onClick=${onExportAll}
+              className="hidden md:inline-flex h-9 px-4 rounded-full bg-slate-100 hover:bg-slate-200 text-[12px] font-semibold text-[#0F172A] transition items-center gap-2"
+            >
+              <span>⇩</span> Export CSV
+            </button>
+          `}
+          <button
+            onClick=${onRefresh}
+            disabled=${refreshing}
+            className="h-9 px-4 rounded-full bg-[#0F172A] text-white text-[12px] font-semibold hover:bg-black transition flex items-center gap-2 disabled:opacity-70"
+          >
+            ${refreshing
+              ? html`<span className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span> Refreshing`
+              : html`<span>↻</span> Refresh`}
+          </button>
+        </div>
+      </header>
+    `;
+  }
+
+  /* ---------- 5. Views ---------- */
+
+  function StatCard({ label, value, sub, accent, active, onClick }) {
+    return html`
+      <button
+        onClick=${onClick}
+        className=${`text-left rounded-2xl border p-5 transition-all ${
+          active
+            ? "bg-white border-[#0F172A] shadow-[0_8px_24px_-12px_rgba(15,23,42,0.25)]"
+            : "bg-white border-slate-200 hover:border-slate-300 hover:shadow-[0_8px_24px_-12px_rgba(15,23,42,0.12)]"
+        }`}
+      >
+        <div className="flex items-center gap-2">
+          <span className="w-2 h-2 rounded-full" style=${{ background: accent }}></span>
+          <span className="text-[10px] font-bold tracking-[0.15em] text-slate-400 uppercase truncate">${label}</span>
+        </div>
+        <div className="mt-2 text-[28px] font-bold text-[#0F172A] leading-none tracking-tight">${value}</div>
+        ${sub && html`<div className="text-[11px] text-slate-500 mt-1.5">${sub}</div>`}
+      </button>
+    `;
+  }
+
+  function OverviewView({ entries, loading, counts, totalCount, onNavigate, onEditEntry }) {
+    const recent = useMemo(() => {
+      if (!entries) return [];
+      const all = [];
+      Object.keys(entries).forEach(sheetName => {
+        (entries[sheetName] || []).forEach(e => {
+          all.push({ sheetName, ...e });
+        });
+      });
+      // Sort by timestamp desc; falls back to rowIndex desc.
+      return all
+        .sort((a, b) => {
+          const ta = new Date(a.data["Submission Timestamp"] || 0).getTime() || 0;
+          const tb = new Date(b.data["Submission Timestamp"] || 0).getTime() || 0;
+          if (ta !== tb) return tb - ta;
+          return b.rowIndex - a.rowIndex;
+        })
+        .slice(0, 8);
+    }, [entries]);
+
+    if (loading) {
+      return html`
+        <div className="py-20 text-center">
+          <div className="w-12 h-12 mx-auto rounded-full border-4 border-slate-200 border-t-[#2563EB] animate-spin"></div>
+          <div className="mt-4 text-[13px] text-slate-500">Loading dashboard…</div>
+        </div>
+      `;
+    }
+
+    const completionPct = (() => {
+      if (!totalCount) return 0;
+      return Math.min(100, Math.round((totalCount / 500) * 100));
+    })();
+
+    return html`
+      <div className="space-y-6">
+        <!-- Header band -->
+        <div className="rounded-[1.75rem] bg-[#0F172A] text-white p-6 md:p-8 relative overflow-hidden">
+          <div className="absolute -top-20 -right-20 w-[300px] h-[300px] rounded-full bg-[#2563EB] opacity-[0.2] blur-[40px]"></div>
+          <div className="absolute -bottom-20 -left-20 w-[300px] h-[300px] rounded-full bg-[#06B6D4] opacity-[0.15] blur-[40px]"></div>
+          <div className="relative flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div>
+              <div className="text-[10px] font-bold tracking-[0.18em] text-white/50 uppercase">Welcome back</div>
+              <h1 className="mt-2 text-[24px] md:text-[28px] font-bold tracking-tight">PST Seniority Dashboard</h1>
+              <p className="mt-2 text-[13px] text-white/60 max-w-[520px]">
+                Live view of every submission received across the four talukas of District Shaheed Benazir Abad.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick=${() => onNavigate("submissions")}
+                className="h-10 px-5 rounded-full bg-white text-[#0F172A] text-[12px] font-bold hover:bg-slate-100 transition"
+              >
+                View All Submissions
+              </button>
+              <button
+                onClick=${() => onNavigate("settings")}
+                className="h-10 px-5 rounded-full bg-white/10 border border-white/15 text-white text-[12px] font-bold hover:bg-white/15 transition"
+              >
+                Settings
+              </button>
+            </div>
+          </div>
+
+          <div className="relative mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="rounded-2xl bg-white/[0.04] border border-white/10 p-4">
+              <div className="text-[10px] font-bold tracking-[0.15em] text-white/40 uppercase">Total Submissions</div>
+              <div className="mt-1 text-[28px] font-bold text-white leading-none">${totalCount}</div>
+              <div className="text-[11px] text-white/50 mt-1.5">Across all talukas</div>
+            </div>
+            <div className="rounded-2xl bg-white/[0.04] border border-white/10 p-4">
+              <div className="text-[10px] font-bold tracking-[0.15em] text-white/40 uppercase">Coverage</div>
+              <div className="mt-1 text-[28px] font-bold text-white leading-none">${completionPct}%</div>
+              <div className="text-[11px] text-white/50 mt-1.5">Est. of active PSTs</div>
+            </div>
+            <div className="rounded-2xl bg-white/[0.04] border border-white/10 p-4">
+              <div className="text-[10px] font-bold tracking-[0.15em] text-white/40 uppercase">Active Talukas</div>
+              <div className="mt-1 text-[28px] font-bold text-white leading-none">4</div>
+              <div className="text-[11px] text-white/50 mt-1.5">Daur · Nawabshah · Sakrand · Kazi Ahmed</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Taluka stat cards -->
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+          <${StatCard}
+            label="All Talukas"
+            value=${totalCount}
+            sub="Every submission"
+            accent="#0F172A"
+            active=${true}
+            onClick=${() => onNavigate("submissions")}
+          />
+          ${Object.keys(TALUKA_SHEETS).map(talukaName => {
+            const sheet = TALUKA_SHEETS[talukaName];
+            const meta = TALUKA_META[talukaName] || { accent: "#64748B" };
+            return html`
+              <${StatCard}
+                key=${talukaName}
+                label=${talukaName}
+                value=${counts[sheet] || 0}
+                sub="Submissions"
+                accent=${meta.accent}
+                onClick=${() => onNavigate("submissions")}
+              />
+            `;
+          })}
+        </div>
+
+        <!-- Taluka distribution -->
+        <div className="grid lg:grid-cols-2 gap-5">
+          <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-[0_1px_3px_0_rgba(15,23,42,0.06)]">
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="text-[11px] font-bold tracking-widest text-slate-400 uppercase">Distribution</div>
+                <div className="text-[16px] font-bold text-[#0F172A] mt-1">By Taluka</div>
+              </div>
+              <div className="text-[11px] text-slate-400">${totalCount} total</div>
+            </div>
+            <div className="mt-5 space-y-3">
+              ${Object.keys(TALUKA_SHEETS).map(talukaName => {
+                const sheet = TALUKA_SHEETS[talukaName];
+                const meta = TALUKA_META[talukaName] || { accent: "#64748B" };
+                const c = counts[sheet] || 0;
+                const pct = totalCount ? Math.round((c / totalCount) * 100) : 0;
+                return html`
+                  <div key=${talukaName}>
+                    <div className="flex items-center justify-between text-[12px]">
+                      <span className="font-semibold text-[#0F172A]">${talukaName}</span>
+                      <span className="text-slate-500">${c} · ${pct}%</span>
+                    </div>
+                    <div className="mt-1.5 h-2 rounded-full bg-slate-100 overflow-hidden">
+                      <div className="h-full rounded-full transition-all duration-700" style=${{ width: `${pct}%`, background: meta.accent }}></div>
+                    </div>
+                  </div>
+                `;
+              })}
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl border border-slate-200 p-6 shadow-[0_1px_3px_0_rgba(15,23,42,0.06)]">
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="text-[11px] font-bold tracking-widest text-slate-400 uppercase">Activity</div>
+                <div className="text-[16px] font-bold text-[#0F172A] mt-1">Recent Submissions</div>
+              </div>
+              <button
+                onClick=${() => onNavigate("submissions")}
+                className="text-[11px] font-semibold text-[#2563EB] hover:underline"
+              >View all →</button>
+            </div>
+
+            <div className="mt-4 divide-y divide-slate-100">
+              ${recent.length === 0
+                ? html`<div className="py-8 text-center text-[12px] text-slate-400">No submissions yet.</div>`
+                : recent.map((r, i) => {
+                  const d = r.data || {};
+                  const taluka = d["Taluka"] || "—";
+                  const meta = TALUKA_META[taluka] || { accent: "#64748B" };
+                  return html`
+                    <button
+                      key=${`${r.sheetName}-${r.rowIndex}-${i}`}
+                      onClick=${() => onEditEntry({ sheet: r.sheetName, rowIndex: r.rowIndex, data: d })}
+                      className="w-full flex items-center gap-3 py-3 text-left hover:bg-slate-50 -mx-2 px-2 rounded-lg transition"
+                    >
+                      <div
+                        className="w-9 h-9 rounded-xl flex items-center justify-center text-white text-[12px] font-bold shrink-0"
+                        style=${{ background: meta.accent }}
+                      >
+                        ${initialsFrom(d["Full Name"])}
+                      </div>
+                      <div className="min-w-0 flex-1">
+                        <div className="text-[13px] font-semibold text-[#0F172A] truncate">${d["Full Name"] || "Unnamed"}</div>
+                        <div className="text-[11px] text-slate-500 truncate">
+                          ${d["Taluka"] || "—"} • ${d["BPS Current"] || "—"} • ${d["Mobile Number"] || "—"}
+                        </div>
+                      </div>
+                      <div className="text-[10px] text-slate-400 shrink-0 hidden sm:block">
+                        ${d["Submission Timestamp"] || ""}
+                      </div>
+                    </button>
+                  `;
+                })}
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function SubmissionsView({
+    entries, loading, loadError, onReload,
+    talukaFilter, setTalukaFilter,
+    onOpenEntry, onExportEntry, onDeleteEntry, onExportCSV
+  }) {
+    const [search, setSearch] = useState("");
+    const [sortBy, setSortBy] = useState("newest");
+
+    const allSheetNames = Object.keys(TALUKA_SHEETS).map(k => TALUKA_SHEETS[k]);
+
+    const counts = useMemo(() => {
+      const c = {};
+      allSheetNames.forEach(n => { c[n] = entries?.[n]?.length || 0; });
+      return c;
+    }, [entries]);
+
+    const totalCount = useMemo(() => Object.values(counts).reduce((a, b) => a + b, 0), [counts]);
+
+    const rows = useMemo(() => {
+      if (!entries) return [];
+      const targets = talukaFilter === "all" ? allSheetNames : [talukaFilter];
+      const collected = [];
+      targets.forEach(sheetName => {
+        (entries[sheetName] || []).forEach(e => collected.push({ sheetName, ...e }));
+      });
+      let filtered = collected;
+      if (search.trim()) {
+        const q = search.trim().toLowerCase();
+        filtered = collected.filter(r => {
+          const d = r.data || {};
+          return (
+            (d["Full Name"] || "").toLowerCase().includes(q) ||
+            (d["Father's Name"] || "").toLowerCase().includes(q) ||
+            (d["CNIC Number"] || "").includes(q) ||
+            (d["PID / Employee ID No."] || "").includes(q) ||
+            (d["Taluka"] || "").toLowerCase().includes(q) ||
+            (d["Mobile Number"] || "").includes(q)
+          );
+        });
+      }
+      if (sortBy === "newest") {
+        filtered = [...filtered].sort((a, b) => {
+          const ta = new Date(a.data["Submission Timestamp"] || 0).getTime() || 0;
+          const tb = new Date(b.data["Submission Timestamp"] || 0).getTime() || 0;
+          if (ta !== tb) return tb - ta;
+          return b.rowIndex - a.rowIndex;
+        });
+      } else if (sortBy === "name") {
+        filtered = [...filtered].sort((a, b) => (a.data["Full Name"] || "").localeCompare(b.data["Full Name"] || ""));
+      } else if (sortBy === "bps") {
+        filtered = [...filtered].sort((a, b) => (a.data["BPS Current"] || "").localeCompare(b.data["BPS Current"] || ""));
+      }
+      return filtered;
+    }, [entries, talukaFilter, search, sortBy]);
+
+    if (loading) {
+      return html`
+        <div className="py-20 text-center">
+          <div className="w-12 h-12 mx-auto rounded-full border-4 border-slate-200 border-t-[#2563EB] animate-spin"></div>
+          <div className="mt-4 text-[13px] text-slate-500">Loading submissions…</div>
+        </div>
+      `;
+    }
+
+    if (loadError) {
+      return html`
+        <div className="py-10 text-center">
+          <div className="max-w-[520px] mx-auto rounded-2xl bg-red-50 border border-red-300 p-6">
+            <div className="text-[14px] font-bold text-red-700">Could not load submissions</div>
+            <div className="text-[12px] text-red-600 mt-1">${loadError}</div>
+            <button onClick=${onReload} className="mt-4 h-10 px-6 rounded-full bg-[#0F172A] text-white text-[12px] font-bold hover:bg-black">Retry</button>
+          </div>
+        </div>
+      `;
+    }
+
+    return html`
+      <div className="space-y-5">
+        <!-- Filters -->
+        <div className="bg-white rounded-2xl border border-slate-200 p-4 md:p-5 shadow-[0_1px_3px_0_rgba(15,23,42,0.06)]">
+          <div className="flex flex-wrap items-center gap-3">
+            <div className="relative flex-1 min-w-[200px]">
+              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-[14px]">⌕</span>
+              <input
+                type="search"
+                placeholder="Search by name, CNIC, PID, mobile…"
+                value=${search}
+                onChange=${e => setSearch(e.target.value)}
+                className="w-full h-10 pl-9 pr-4 rounded-full border border-slate-200 bg-[#F8FAFC] text-[13px] outline-none transition focus:border-[#2563EB] focus:ring-4 focus:ring-[#2563EB]/10"
+              />
+            </div>
+            <select
+              value=${sortBy}
+              onChange=${e => setSortBy(e.target.value)}
+              className="h-10 px-4 rounded-full border border-slate-200 bg-[#F8FAFC] text-[13px] outline-none"
+            >
+              <option value="newest">Newest First</option>
+              <option value="name">Name (A–Z)</option>
+              <option value="bps">BPS (Low→High)</option>
+            </select>
+            ${onExportCSV && html`
+              <button
+                onClick=${() => onExportCSV(rows)}
+                className="h-10 px-5 rounded-full bg-slate-100 hover:bg-slate-200 text-[12px] font-semibold text-[#0F172A] transition"
+              >Export CSV</button>
+            `}
+          </div>
+
+          <div className="flex flex-wrap gap-2 mt-4">
+            <button
+              onClick=${() => setTalukaFilter("all")}
+              className=${`h-8 px-3.5 rounded-full text-[11px] font-semibold transition ${
+                talukaFilter === "all" ? "bg-[#0F172A] text-white" : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+              }`}
+            >All (${totalCount})</button>
+            ${Object.keys(TALUKA_SHEETS).map(t => {
+              const sheet = TALUKA_SHEETS[t];
+              const meta = TALUKA_META[t] || { accent: "#64748B" };
+              return html`
+                <button
+                  key=${t}
+                  onClick=${() => setTalukaFilter(sheet)}
+                  className=${`h-8 px-3.5 rounded-full text-[11px] font-semibold transition flex items-center gap-2 ${
+                    talukaFilter === sheet ? "text-white" : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                  }`}
+                  style=${{ background: talukaFilter === sheet ? meta.accent : undefined }}
+                >
+                  <span className="w-1.5 h-1.5 rounded-full" style=${{ background: talukaFilter === sheet ? "#fff" : meta.accent }}></span>
+                  ${t} (${counts[sheet] || 0})
+                </button>
+              `;
+            })}
+          </div>
+
+          <div className="mt-4 text-[11px] text-slate-500">
+            Showing <span className="font-semibold text-[#0F172A]">${rows.length}</span> record${rows.length === 1 ? "" : "s"}
+            ${search && html` <span> matching "${search}"</span>`}
+          </div>
+        </div>
+
+        <!-- Table -->
+        ${rows.length === 0
+          ? html`
+            <div className="bg-white rounded-2xl border border-slate-200 p-12 text-center shadow-[0_1px_3px_0_rgba(15,23,42,0.06)]">
+              <div className="w-14 h-14 rounded-2xl bg-slate-100 flex items-center justify-center mx-auto text-slate-400 text-[22px]">☰</div>
+              <div className="mt-4 text-[15px] font-bold text-[#0F172A]">No submissions found</div>
+              <div className="text-[12px] text-slate-500 mt-1">
+                ${search ? "Try a different search term." : "Nothing has been submitted yet for this filter."}
+              </div>
+            </div>
+          `
+          : html`
+            <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-[0_1px_3px_0_rgba(15,23,42,0.06)]">
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-[12.5px]">
+                  <thead className="bg-[#F8FAFC] border-b border-slate-200">
+                    <tr className="text-slate-500 uppercase text-[10px] tracking-[0.1em]">
+                      <th className="px-4 py-3 font-bold">#</th>
+                      <th className="px-4 py-3 font-bold">Name</th>
+                      <th className="px-4 py-3 font-bold">CNIC</th>
+                      <th className="px-4 py-3 font-bold">PID</th>
+                      <th className="px-4 py-3 font-bold">Taluka</th>
+                      <th className="px-4 py-3 font-bold">BPS</th>
+                      <th className="px-4 py-3 font-bold">Mobile</th>
+                      <th className="px-4 py-3 font-bold">Submitted</th>
+                      <th className="px-4 py-3 font-bold text-right">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${rows.map((r, i) => {
+                      const d = r.data || {};
+                      const taluka = d["Taluka"] || "—";
+                      const meta = TALUKA_META[taluka] || { accent: "#64748B" };
+                      return html`
+                        <tr key=${`${r.sheetName}-${r.rowIndex}-${i}`} className="border-b border-slate-100 hover:bg-[#F8FAFC] transition">
+                          <td className="px-4 py-3 text-slate-400 font-mono text-[11px]">#${r.rowIndex}</td>
+                          <td className="px-4 py-3">
+                            <div className="flex items-center gap-2.5 min-w-0">
+                              <div
+                                className="w-8 h-8 rounded-lg flex items-center justify-center text-white text-[11px] font-bold shrink-0"
+                                style=${{ background: meta.accent }}
+                              >
+                                ${initialsFrom(d["Full Name"])}
+                              </div>
+                              <div className="min-w-0">
+                                <div className="font-semibold text-[#0F172A] truncate max-w-[180px]">${d["Full Name"] || "—"}</div>
+                                <div className="text-[10px] text-slate-400 truncate max-w-[180px]">${d["Father's Name"] || ""}</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td className="px-4 py-3 text-slate-600 font-mono text-[11px] whitespace-nowrap">${d["CNIC Number"] || "—"}</td>
+                          <td className="px-4 py-3 text-slate-600 font-mono text-[11px]">${d["PID / Employee ID No."] || "—"}</td>
+                          <td className="px-4 py-3">
+                            <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold" style=${{ background: `${meta.accent}15`, color: meta.accent }}>
+                              <span className="w-1.5 h-1.5 rounded-full" style=${{ background: meta.accent }}></span>
+                              ${taluka}
+                            </span>
+                          </td>
+                          <td className="px-4 py-3 text-slate-600 whitespace-nowrap">${d["BPS Current"] || "—"}</td>
+                          <td className="px-4 py-3 text-slate-600 font-mono text-[11px] whitespace-nowrap">${d["Mobile Number"] || "—"}</td>
+                          <td className="px-4 py-3 text-slate-500 text-[11px] whitespace-nowrap">${d["Submission Timestamp"] || "—"}</td>
+                          <td className="px-4 py-3">
+                            <div className="flex items-center justify-end gap-1">
+                              <button
+                                onClick=${() => onOpenEntry({ sheet: r.sheetName, rowIndex: r.rowIndex, data: d })}
+                                title="View / Edit"
+                                className="h-8 px-3 rounded-lg bg-[#0F172A] text-white text-[11px] font-semibold hover:bg-black transition"
+                              >View</button>
+                              <button
+                                onClick=${() => onExportEntry({ sheet: r.sheetName, rowIndex: r.rowIndex, data: d })}
+                                title="Export PDF"
+                                className="h-8 px-3 rounded-lg bg-slate-100 text-[#0F172A] text-[11px] font-semibold hover:bg-slate-200 transition"
+                              >PDF</button>
+                              <button
+                                onClick=${() => onDeleteEntry({ sheet: r.sheetName, rowIndex: r.rowIndex, data: d })}
+                                title="Delete"
+                                className="h-8 px-3 rounded-lg bg-red-50 text-red-600 text-[11px] font-semibold hover:bg-red-100 transition"
+                              >Del</button>
+                            </div>
+                          </td>
+                        </tr>
+                      `;
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          `}
+      </div>
+    `;
+  }
+
+  function TalukasView({ entries, onNavigate }) {
+    return html`
+      <div className="space-y-5">
+        <div className="bg-white rounded-2xl border border-slate-200 p-6 md:p-7 shadow-[0_1px_3px_0_rgba(15,23,42,0.06)]">
+          <div className="text-[11px] font-bold tracking-widest text-slate-400 uppercase">Taluka Overview</div>
+          <h2 className="mt-1 text-[20px] md:text-[24px] font-bold text-[#0F172A] tracking-tight">Submissions by Taluka</h2>
+          <p className="text-[13px] text-slate-500 mt-1">Each taluka has its own sheet. Click any card to filter the submissions view.</p>
+
+          <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            ${Object.keys(TALUKA_SHEETS).map(talukaName => {
+              const sheet = TALUKA_SHEETS[talukaName];
+              const meta = TALUKA_META[talukaName] || { accent: "#64748B", short: "·" };
+              const count = entries?.[sheet]?.length || 0;
+              return html`
+                <button
+                  key=${talukaName}
+                  onClick=${() => onNavigate("submissions")}
+                  className="text-left bg-white rounded-2xl border border-slate-200 p-5 hover:border-slate-300 hover:shadow-[0_8px_24px_-12px_rgba(15,23,42,0.15)] transition-all"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div
+                      className="w-12 h-12 rounded-2xl flex items-center justify-center text-white font-bold text-[15px]"
+                      style=${{ background: `linear-gradient(135deg, ${meta.accent}, #0F172A)` }}
+                    >${meta.short}</div>
+                    <div className="text-right">
+                      <div className="text-[28px] font-bold text-[#0F172A] leading-none">${count}</div>
+                      <div className="text-[10px] tracking-widest text-slate-400 uppercase mt-1">Records</div>
+                    </div>
+                  </div>
+                  <div className="mt-4">
+                    <div className="text-[15px] font-bold text-[#0F172A]">${talukaName}</div>
+                    <div className="text-[11px] text-slate-500 font-mono">${sheet}</div>
+                  </div>
+                </button>
+              `;
+            })}
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function SettingsView({
+    scriptUrl, setScriptUrl, secret, setSecret,
+    status, setStatus, scriptCode, onLogout
+  }) {
+    const [copied, setCopied] = useState(false);
+    const [busy, setBusy] = useState("");
+
+    const saveUrl = () => {
+      try { localStorage.setItem("sba_script_url", scriptUrl); setStatus("✓ Web App URL saved."); }
+      catch { setStatus("⚠ Could not save to localStorage."); }
+    };
+
+    const testConnection = async () => {
+      if (!scriptUrl) { setStatus("Enter the Web App URL first."); return; }
+      setBusy("test");
+      setStatus("Testing connection...");
+      try {
+        const res = await fetch(scriptUrl, { method: "GET" });
+        const data = await res.json();
+        setStatus(`✓ Online — ${data.status} @ ${data.time}`);
+      } catch (err) {
+        setStatus(`✗ Connection failed: ${err.message}`);
+      } finally { setBusy(""); }
+    };
+
+    const initSheets = async () => {
+      if (!scriptUrl) { setStatus("Enter the Web App URL first."); return; }
+      if (!secret) { setStatus("Enter the SETUP_SECRET first."); return; }
+      setBusy("init");
+      setStatus("Initializing taluka sheets...");
+      try {
+        const res = await fetch(scriptUrl, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({ action: "setup", key: secret })
+        });
+        const data = await res.json();
+        setStatus(data.ok ? `✓ ${data.message}` : `✗ ${data.error}`);
+      } catch (err) {
+        setStatus(`✗ ${err.message}`);
+      } finally { setBusy(""); }
+    };
+
+    const copyScript = async () => {
+      try { await navigator.clipboard.writeText(scriptCode); }
+      catch {
+        const ta = document.createElement("textarea");
+        ta.value = scriptCode;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+      }
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    };
+
+    const inputCls = "w-full h-[46px] rounded-xl border border-slate-200 bg-white px-4 text-[13px] outline-none transition focus:border-[#2563EB] focus:ring-4 focus:ring-[#2563EB]/10";
+
+    return html`
+      <div className="space-y-5">
+        <div className="bg-white rounded-2xl border border-slate-200 p-6 md:p-7 shadow-[0_1px_3px_0_rgba(15,23,42,0.06)]">
+          <div className="text-[11px] font-bold tracking-widest text-slate-400 uppercase">Backend Configuration</div>
+          <h2 className="mt-1 text-[20px] md:text-[24px] font-bold text-[#0F172A] tracking-tight">Google Sheets Integration</h2>
+          <p className="text-[13px] text-slate-500 mt-1">Configure the connection to your Apps Script backend.</p>
+
+          <div className="mt-6 grid lg:grid-cols-2 gap-5">
+            <div className="space-y-4">
+              <div>
+                <label className="text-[11px] font-bold tracking-[0.08em] text-slate-700 uppercase">Web App URL</label>
+                <div className="mt-2 flex gap-2">
+                  <input
+                    value=${scriptUrl}
+                    onChange=${e => setScriptUrl(e.target.value)}
+                    placeholder="https://script.google.com/macros/s/.../exec"
+                    className=${`${inputCls} font-mono text-[12px] flex-1`}
+                  />
+                  <button onClick=${saveUrl} className="h-[46px] px-5 rounded-xl bg-[#0F172A] text-white text-[12px] font-bold hover:bg-black transition shrink-0">Save</button>
+                </div>
+              </div>
+
+              <div>
+                <label className="text-[11px] font-bold tracking-[0.08em] text-slate-700 uppercase">Setup Secret</label>
+                <input
+                  type="password"
+                  value=${secret}
+                  onChange=${e => setSecret(e.target.value)}
+                  className=${`mt-2 ${inputCls} font-mono text-[12px]`}
+                  placeholder="••••••••••••"
+                />
+                <div className="mt-1 text-[10px] text-slate-400">Change in Apps Script → Project Settings → Script Properties → SETUP_SECRET.</div>
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                <button
+                  onClick=${testConnection}
+                  disabled=${busy === "test"}
+                  className="h-[46px] px-5 rounded-xl bg-[#2563EB] text-white text-[12px] font-bold hover:bg-[#1d4ed8] transition disabled:opacity-70 flex items-center gap-2"
+                >
+                  ${busy === "test" ? html`<span className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>` : null}
+                  Test Connection
+                </button>
+                <button
+                  onClick=${initSheets}
+                  disabled=${busy === "init"}
+                  className="h-[46px] px-5 rounded-xl bg-[#10B981] text-white text-[12px] font-bold hover:bg-[#0ea76e] transition disabled:opacity-70 flex items-center gap-2"
+                >
+                  ${busy === "init" ? html`<span className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>` : null}
+                  Initialize Sheets
+                </button>
+                <button
+                  onClick=${onLogout}
+                  className="h-[46px] px-5 rounded-xl bg-red-50 text-red-600 text-[12px] font-bold hover:bg-red-100 transition"
+                >Sign Out</button>
+              </div>
+
+              <div className="rounded-xl border border-slate-200 bg-[#F8FAFC] p-4 text-[12px] text-slate-700 min-h-[52px]">
+                ${status || "Status: Ready"}
+              </div>
+
+              <div className="rounded-2xl border border-slate-200 bg-[#F8FAFC] p-5">
+                <div className="text-[12px] font-bold text-[#0F172A]">Notes</div>
+                <ul className="mt-3 space-y-2 text-[12px] leading-relaxed text-slate-600 list-disc list-inside">
+                  <li><strong>Initialize Sheets</strong> is non-destructive — it creates missing sheets and refreshes the header row, but never deletes data.</li>
+                  <li>After updating Apps Script code, always redeploy: Deploy → Manage Deployments → ✏ → New Version.</li>
+                  <li>Keep the <span className="font-mono">SETUP_SECRET</span> private.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div className="flex items-center justify-between">
+                <div className="text-[11px] font-bold tracking-[0.08em] text-slate-700 uppercase">Apps Script Code</div>
+                <button
+                  onClick=${copyScript}
+                  className="h-8 px-3 rounded-full bg-[#0F172A] text-white text-[11px] font-semibold hover:bg-black transition"
+                >${copied ? "Copied!" : "Copy Code"}</button>
+              </div>
+              <pre className="mt-2 bg-[#0F172A] text-[#E2E8F0] rounded-2xl p-4 text-[11px] leading-[1.5] font-mono whitespace-pre-wrap overflow-auto max-h-[460px]">
+${scriptCode}
+              </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  /* ---------- 6. Detail / Edit modal ---------- */
+
+  function EntryDetailModal({ entry, scriptUrl, secret, onClose, onSaved, onDelete, onExport, pushToast }) {
+    const [mode, setMode] = useState("view"); // "view" | "edit"
+    const [form, setForm] = useState(() => rowToForm(entry.data));
+    const [saving, setSaving] = useState(false);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+      const onKey = e => {
+        if (e.key === "Escape" && !saving) onClose();
+      };
+      window.addEventListener("keydown", onKey);
+      document.body.style.overflow = "hidden";
+      return () => {
+        window.removeEventListener("keydown", onKey);
+        document.body.style.overflow = "";
+      };
+    }, [onClose, saving]);
+
+    const taluka = entry.data["Taluka"] || "—";
+    const meta = TALUKA_META[taluka] || { accent: "#64748B" };
+    const display = mode === "view" ? entry.data : buildPayload(form);
+
+    const update = (key, value) => {
+      let v = value;
+      if (key === "fullName" || key === "fatherName") v = String(v).toUpperCase();
+      if (key === "cnic") v = formatCNIC(v);
+      if (key === "mobile" || key === "whatsapp") v = formatPhone(v);
+      setForm(prev => ({ ...prev, [key]: v }));
+    };
+
+    const save = async () => {
+      setSaving(true);
+      setError(null);
+      try {
+        const payload = buildPayload(form);
+        payload["Submission Timestamp"] = entry.data["Submission Timestamp"] || "";
+        const res = await fetch(scriptUrl, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({
+            action: "update",
+            key: secret,
+            sheet: entry.sheet,
+            rowIndex: entry.rowIndex,
+            data: payload
+          })
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        if (!data.ok) throw new Error(data.error || "Update failed");
+        pushToast("Entry updated successfully.", "success");
+        onSaved();
+        onClose();
+      } catch (err) {
+        setError(err.message || "Update failed");
+        pushToast(err.message || "Update failed", "error");
+      } finally {
+        setSaving(false);
+      }
+    };
+
+    const inputCls = "w-full h-[42px] rounded-lg border border-slate-200 bg-white px-3 text-[13px] outline-none transition focus:border-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/10";
+    const selectCls = "w-full h-[42px] rounded-lg border border-slate-200 bg-[#F8FAFC] px-3 text-[13px] outline-none transition focus:border-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/10";
+
+    return html`
+      <div className="fixed inset-0 z-[70] flex items-start md:items-center justify-center p-3 sm:p-6 bg-[#0F172A]/75 backdrop-blur-[10px] overflow-y-auto">
+        <div className="w-full max-w-[1100px] bg-white rounded-[1.5rem] shadow-[0_32px_80px_-24px_rgba(15,23,42,0.35)] overflow-hidden my-6">
+
+          <!-- Header -->
+          <div
+            className="relative px-6 sm:px-8 py-5 flex items-start justify-between"
+            style=${{ background: `linear-gradient(135deg, ${meta.accent} 0%, #0F172A 140%)` }}
+          >
+            <div className="absolute inset-0 opacity-[0.1]" style=${{ backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)", backgroundSize: "22px 22px" }}></div>
+            <div className="relative flex items-center gap-4 text-white min-w-0">
+              <div className="w-14 h-14 rounded-2xl bg-white/15 border border-white/20 flex items-center justify-center text-[18px] font-bold shrink-0">
+                ${initialsFrom(entry.data["Full Name"])}
+              </div>
+              <div className="min-w-0">
+                <div className="text-[10px] font-bold tracking-[0.2em] text-white/60 uppercase">Submission Record</div>
+                <div className="text-[18px] sm:text-[22px] font-bold tracking-tight truncate">
+                  ${entry.data["Full Name"] || "Unnamed Entry"}
+                </div>
+                <div className="text-[11px] text-white/70 mt-0.5 truncate">
+                  ${entry.sheet} · Row #${entry.rowIndex} · ${taluka} Taluka
+                </div>
+              </div>
+            </div>
+            <button
+              onClick=${onClose}
+              disabled=${saving}
+              className="relative w-9 h-9 rounded-full bg-white/15 border border-white/20 text-white flex items-center justify-center hover:bg-white/25 transition shrink-0"
+            >✕</button>
+          </div>
+
+          <!-- Mode tabs + actions -->
+          <div className="px-6 sm:px-8 py-4 border-b border-slate-100 flex flex-wrap items-center justify-between gap-3">
+            <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-full">
+              <button
+                onClick=${() => setMode("view")}
+                className=${`h-8 px-4 rounded-full text-[12px] font-semibold transition ${mode === "view" ? "bg-white text-[#0F172A] shadow-sm" : "text-slate-500 hover:text-[#0F172A]"}`}
+              >View</button>
+              <button
+                onClick=${() => setMode("edit")}
+                className=${`h-8 px-4 rounded-full text-[12px] font-semibold transition ${mode === "edit" ? "bg-white text-[#0F172A] shadow-sm" : "text-slate-500 hover:text-[#0F172A]"}`}
+              >Edit</button>
+            </div>
+            <div className="flex items-center gap-2">
+              <button
+                onClick=${() => onExport(entry)}
+                className="h-9 px-4 rounded-full bg-slate-100 text-[#0F172A] text-[12px] font-semibold hover:bg-slate-200 transition inline-flex items-center gap-2"
+              >
+                <span>⇩</span> Export PDF
+              </button>
+              <button
+                onClick=${() => onDelete(entry)}
+                className="h-9 px-4 rounded-full bg-red-50 text-red-600 text-[12px] font-semibold hover:bg-red-100 transition"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+
+          <!-- Body -->
+          <div className="px-6 sm:px-8 py-6 max-h-[65vh] overflow-y-auto space-y-6">
+            ${mode === "view" && html`
+              ${FORM_SECTIONS.map(section => html`
+                <section key=${section.title}>
+                  <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400 uppercase mb-3 pb-2 border-b border-slate-100">
+                    ${section.title}
+                  </div>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    ${section.fields.map(([key, label]) => {
+                      const v = display[key];
+                      const empty = !v || !String(v).trim();
+                      return html`
+                        <div key=${key}>
+                          <div className="text-[10px] font-bold tracking-wider text-slate-400 uppercase">${label}</div>
+                          <div className=${`mt-1 text-[13.5px] break-words ${empty ? "text-slate-300 italic" : "text-[#0F172A] font-semibold"}`}>
+                            ${empty ? "—" : v}
+                          </div>
+                        </div>
+                      `;
+                    })}
+                  </div>
+                </section>
+              `)}
+              <div className="pt-2">
+                <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400 uppercase mb-3 pb-2 border-b border-slate-100">Meta</div>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <div className="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Submission Timestamp</div>
+                    <div className="mt-1 text-[13px] font-mono text-slate-700">${entry.data["Submission Timestamp"] || "—"}</div>
+                  </div>
+                  <div>
+                    <div className="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Sheet / Row</div>
+                    <div className="mt-1 text-[13px] font-mono text-slate-700">${entry.sheet} #${entry.rowIndex}</div>
+                  </div>
+                </div>
+              </div>
+            `}
+
+            ${mode === "edit" && html`
+              ${FORM_SECTIONS.map(section => html`
+                <section key=${section.title}>
+                  <div className="text-[10px] font-bold tracking-[0.18em] text-slate-400 uppercase mb-3 pb-2 border-b border-slate-100">
+                    ${section.title}
+                  </div>
+                  <div className="grid sm:grid-cols-2 gap-3">
+                    ${section.fields.map(([key, label]) => {
+                      const fieldKey = {
+                        "Email Address": "email", "Full Name": "fullName", "Father's Name": "fatherName",
+                        "Gender": "gender", "Mobile Number": "mobile", "WhatsApp Number": "whatsapp",
+                        "CNIC Number": "cnic", "Date of Birth": "dob",
+                        "PID / Employee ID No.": "pid", "District": "district", "District Manual": "districtManual",
+                        "Taluka": "taluka", "Taluka Manual": "talukaManual", "UC / TC": "ucTc",
+                        "Place of Posting Initial": "postingInitial", "Semis Code Initial": "semisInitial",
+                        "Place of Posting Current": "postingCurrent", "Semis Code Current": "semisCurrent",
+                        "Cader": "cader", "Designation Initial": "desigInitial",
+                        "Designation Initial Manual": "desigInitialManual", "BPS Initial": "bpsInitial",
+                        "Designation Current": "desigCurrent", "Designation Current Manual": "desigCurrentManual",
+                        "BPS Current": "bpsCurrent", "Date of Appointment": "doa",
+                        "Date of Regularization": "dor",
+                        "PST joining Date in District Shaheed Benazir Abad": "pstJoining",
+                        "Academic Qualification": "academic", "Academic Qualification Manual": "academicManual",
+                        "Professional Qualification": "professional", "Professional Qualification Manual": "professionalManual",
+                        "Date of B.Ed Result Declaration": "bedResult", "STEDA Teaching Licence": "steda",
+                        "Remarks": "remarks"
+                      }[key];
+
+                      if (!fieldKey) return null;
+
+                      // Custom inputs for select-like fields
+                      if (key === "Gender") {
+                        return html`
+                          <div key=${key}>
+                            <label className="text-[10px] font-bold tracking-wider text-slate-500 uppercase">${label}</label>
+                            <select value=${form.gender} onChange=${e => update("gender", e.target.value)} className=${`mt-1 ${selectCls}`}>
+                              <option value="">Select</option>
+                              <option>Male</option>
+                              <option>Female</option>
+                            </select>
+                          </div>
+                        `;
+                      }
+                      if (key === "Taluka") {
+                        return html`
+                          <div key=${key}>
+                            <label className="text-[10px] font-bold tracking-wider text-slate-500 uppercase">${label}</label>
+                            <select value=${form.taluka} onChange=${e => update("taluka", e.target.value)} className=${`mt-1 ${selectCls}`}>
+                              <option value="">Select</option>
+                              ${TALUKA_OPTIONS.map(t => html`<option key=${t}>${t}</option>`)}
+                            </select>
+                          </div>
+                        `;
+                      }
+                      if (key === "District") {
+                        return html`
+                          <div key=${key}>
+                            <label className="text-[10px] font-bold tracking-wider text-slate-500 uppercase">${label}</label>
+                            <select value=${form.district} onChange=${e => update("district", e.target.value)} className=${`mt-1 ${selectCls}`}>
+                              <option value="">Select</option>
+                              <option>Shaheed Benazir Abad</option>
+                              <option>Others</option>
+                            </select>
+                          </div>
+                        `;
+                      }
+                      if (key === "Designation Initial" || key === "Designation Current") {
+                        const fk = fieldKey;
+                        return html`
+                          <div key=${key}>
+                            <label className="text-[10px] font-bold tracking-wider text-slate-500 uppercase">${label}</label>
+                            <select value=${form[fk]} onChange=${e => update(fk, e.target.value)} className=${`mt-1 ${selectCls}`}>
+                              <option value="">Select</option>
+                              <option>PST</option>
+                              <option>Others</option>
+                            </select>
+                          </div>
+                        `;
+                      }
+                      if (key === "BPS Initial" || key === "BPS Current") {
+                        const fk = fieldKey;
+                        return html`
+                          <div key=${key}>
+                            <label className="text-[10px] font-bold tracking-wider text-slate-500 uppercase">${label}</label>
+                            <select value=${form[fk]} onChange=${e => update(fk, e.target.value)} className=${`mt-1 ${selectCls}`}>
+                              <option value="">Select</option>
+                              ${["BPS-07","BPS-09","BPS-10","BPS-11","BPS-12","BPS-13","BPS-14","BPS-15","BPS-16","BPS-17"].map(b => html`<option key=${b}>${b}</option>`)}
+                            </select>
+                          </div>
+                        `;
+                      }
+                      if (key === "STEDA Teaching Licence") {
+                        return html`
+                          <div key=${key}>
+                            <label className="text-[10px] font-bold tracking-wider text-slate-500 uppercase">${label}</label>
+                            <select value=${form.steda} onChange=${e => update("steda", e.target.value)} className=${`mt-1 ${selectCls}`}>
+                              <option value="">Select</option>
+                              <option>Yes</option>
+                              <option>No</option>
+                            </select>
+                          </div>
+                        `;
+                      }
+                      if (key === "Remarks") {
+                        return html`
+                          <div key=${key} className="sm:col-span-2">
+                            <label className="text-[10px] font-bold tracking-wider text-slate-500 uppercase">${label}</label>
+                            <textarea
+                              value=${form.remarks}
+                              onChange=${e => update("remarks", e.target.value)}
+                              rows="3"
+                              className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-[13px] outline-none resize-none focus:border-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/10"
+                            />
+                          </div>
+                        `;
+                      }
+                      // Default text input
+                      const fk = fieldKey;
+                      const isMono = ["cnic","mobile","whatsapp","pid","semisInitial","semisCurrent"].includes(fk);
+                      const isDate = ["dob","doa","dor","pstJoining","bedResult"].includes(fk);
+                      const isUpper = ["fullName","fatherName"].includes(fk);
+                      return html`
+                        <div key=${key}>
+                          <label className="text-[10px] font-bold tracking-wider text-slate-500 uppercase">${label}</label>
+                          <input
+                            type=${isDate ? "date" : "text"}
+                            value=${form[fk] || ""}
+                            onChange=${e => update(fk, e.target.value)}
+                            className=${`mt-1 ${inputCls} ${isMono ? "font-mono" : ""} ${isUpper ? "uppercase font-semibold" : ""}`}
+                          />
+                        </div>
+                      `;
+                    })}
+                  </div>
+                </section>
+              `)}
+            `}
+
+            ${error && html`
+              <div className="rounded-xl bg-red-50 border border-red-300 p-3 text-[12px] text-red-700">
+                <div className="font-bold">Update failed</div>
+                <div className="mt-1">${error}</div>
+              </div>
+            `}
+          </div>
+
+          <!-- Footer -->
+          <div className="px-6 sm:px-8 py-4 border-t border-slate-100 bg-slate-50 flex flex-wrap items-center justify-between gap-3">
+            <div className="text-[11px] text-slate-500">
+              ${mode === "view"
+                ? "Switch to Edit to modify this record."
+                : "Changes overwrite the row in the taluka sheet."}
+            </div>
+            <div className="flex items-center gap-2">
+              <button
+                onClick=${onClose}
+                disabled=${saving}
+                className="h-[42px] px-5 rounded-full border border-slate-200 font-semibold text-[13px] text-slate-700 hover:bg-white disabled:opacity-60 transition"
+              >Close</button>
+              ${mode === "edit" && html`
+                <button
+                  onClick=${save}
+                  disabled=${saving}
+                  className="h-[42px] px-6 rounded-full bg-[#0F172A] text-white font-semibold text-[13px] hover:bg-black transition flex items-center gap-2 disabled:opacity-60"
+                >
+                  ${saving
+                    ? html`<span className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span> Saving…`
+                    : "Save Changes"}
+                </button>
+              `}
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function ConfirmDialog({ open, title, message, confirmLabel, danger, onConfirm, onCancel, busy }) {
+    if (!open) return null;
+    return html`
+      <div className="fixed inset-0 z-[80] flex items-center justify-center p-4 bg-[#0F172A]/75 backdrop-blur-[10px]">
+        <div className="w-full max-w-[420px] bg-white rounded-[1.5rem] shadow-[0_24px_64px_-16px_rgba(0,0,0,0.5)] border border-slate-200 p-6 md:p-7">
+          <div className="flex items-start gap-3">
+            <div className=${`w-11 h-11 rounded-2xl flex items-center justify-center text-[18px] shrink-0 ${danger ? "bg-red-100 text-red-600" : "bg-[#2563EB]/10 text-[#2563EB]"}`}>
+              ${danger ? "!" : "?"}
+            </div>
+            <div className="min-w-0">
+              <div className="text-[16px] font-bold text-[#0F172A] tracking-tight">${title}</div>
+              <div className="text-[13px] text-slate-600 mt-1 leading-relaxed">${message}</div>
+            </div>
+          </div>
+          <div className="mt-6 flex items-center justify-end gap-2">
+            <button
+              onClick=${onCancel}
+              disabled=${busy}
+              className="h-[42px] px-5 rounded-full border border-slate-200 font-semibold text-[13px] text-slate-700 hover:bg-slate-50 disabled:opacity-60 transition"
+            >Cancel</button>
+            <button
+              onClick=${onConfirm}
+              disabled=${busy}
+              className=${`h-[42px] px-6 rounded-full text-white font-semibold text-[13px] transition flex items-center gap-2 disabled:opacity-60 ${danger ? "bg-red-600 hover:bg-red-700" : "bg-[#0F172A] hover:bg-black"}`}
+            >
+              ${busy ? html`<span className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>` : null}
+              ${confirmLabel || "Confirm"}
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function ToastStack({ toasts, onDismiss }) {
+    return html`
+      <div className="fixed bottom-4 right-4 z-[90] flex flex-col gap-2 pointer-events-none">
+        ${toasts.map(t => html`
+          <div
+            key=${t.id}
+            className=${`pointer-events-auto flex items-center gap-3 px-4 py-3 rounded-xl shadow-[0_8px_24px_-12px_rgba(15,23,42,0.25)] border text-[13px] font-medium min-w-[240px] max-w-[360px] ${
+              t.type === "error"
+                ? "bg-white border-red-300 text-red-700"
+                : t.type === "success"
+                  ? "bg-white border-[#10B981] text-[#0F172A]"
+                  : "bg-white border-slate-200 text-[#0F172A]"
+            }`}
+            onClick=${() => onDismiss(t.id)}
+          >
+            <span className=${`w-6 h-6 rounded-full flex items-center justify-center text-white text-[11px] shrink-0 ${
+              t.type === "error" ? "bg-red-500" : "bg-[#10B981]"
+            }`}>
+              ${t.type === "error" ? "!" : "✓"}
+            </span>
+            <span className="flex-1">${t.message}</span>
+          </div>
+        `)}
+      </div>
+    `;
+  }
+
+  /* ---------- 7. Main App ---------- */
+
+  /* Full Apps Script — kept as a constant for the Settings tab */
+  const APPS_SCRIPT_CODE = (() => {
+    const SHEET_MAP_LITERAL = JSON.stringify({
+      "Daur":       "Responses_Daur",
+      "Nawabshah":  "Responses_Nawabshah",
+      "Sakrand":    "Responses_Sakrand",
+      "Kazi Ahmed": "Responses_KaziAhmed",
+      "Others":     "Responses_Others"
+    }, null, 2);
+
+    const HEADERS_LITERAL = JSON.stringify(SHEET_HEADERS, null, 2);
+
+    return `/* ============================================================
+   PST Seniority — District Shaheed Benazir Abad
+   Backend for public form + admin dashboard.
+   ============================================================ */
+const SHEET_MAP = ${SHEET_MAP_LITERAL};
+const DEFAULT_SHEET = "Responses_Others";
+const HEADERS = ${HEADERS_LITERAL};
+
+function json(obj) {
+  return ContentService.createTextOutput(JSON.stringify(obj))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+function getSetupSecret() {
+  return PropertiesService.getScriptProperties().getProperty("SETUP_SECRET") || "";
+}
+
+function sanitizeCell(v) {
+  if (v === null || v === undefined) return "";
+  var s = String(v);
+  if (/^[=+@\\t\\r-]/.test(s)) return "'" + s;
+  return s;
+}
+
+function sheetNameFor(taluka) {
+  return SHEET_MAP[taluka] || DEFAULT_SHEET;
+}
+
+function styleHeader(sheet) {
+  var hr = sheet.getRange(1, 1, 1, HEADERS.length);
+  hr.setValues([HEADERS]);
+  hr.setBackground("#0F172A").setFontColor("#FFFFFF").setFontWeight("bold").setWrap(true);
+  sheet.setFrozenRows(1);
+  try { sheet.autoResizeColumns(1, HEADERS.length); } catch(e) {}
+  hr.setHorizontalAlignment("center");
+}
+
+function ensureSheetStructure(name) {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName(name);
+  var created = false;
+  if (!sheet) {
+    sheet = ss.insertSheet(name);
+    created = true;
+  }
+  styleHeader(sheet);
+  return { name: name, created: created, rows: Math.max(0, sheet.getLastRow() - 1) };
+}
+
+function doPost(e) {
+  var lock = LockService.getScriptLock();
+  try {
+    if (!lock.tryLock(10000)) {
+      return json({ok:false, error:"Server busy, please retry in a moment."});
+    }
+    var body = {};
+    try { body = JSON.parse(e.postData.contents); } catch(err) { body = e.parameter; }
+    var action = body.action || e.parameter.action;
+    var key = body.key || e.parameter.key || "";
+
+    /* -------- VERIFY (login) -------- */
+    if (action === "verify") {
+      var exp0 = getSetupSecret();
+      return json({ok: !!exp0 && key === exp0});
+    }
+
+    /* -------- SETUP (non-destructive) -------- */
+    if (action === "setup") {
+      var expected = getSetupSecret();
+      if (!expected) return json({ok:false, error:"SETUP_SECRET not configured."});
+      if (key !== expected) return json({ok:false, error:"Invalid setup secret"});
+      var names = Object.keys(SHEET_MAP).map(function(k) { return SHEET_MAP[k]; });
+      var results = names.map(function(n) { return ensureSheetStructure(n); });
+      results.push(ensureSheetStructure(DEFAULT_SHEET));
+      var summary = results.map(function(r) {
+        return (r.created ? "＋" : "•") + " " + r.name + " (" + r.rows + " rows)";
+      }).join(" | ");
+      return json({ok:true, message:"Sheets ready — " + summary});
+    }
+
+    /* -------- LIST (dashboard) -------- */
+    if (action === "list") {
+      var exp2 = getSetupSecret();
+      if (!exp2 || key !== exp2) return json({ok:false, error:"Unauthorized"});
+      var ss2 = SpreadsheetApp.getActiveSpreadsheet();
+      var payload = {};
+      var allSheets = Object.keys(SHEET_MAP).map(function(k) { return SHEET_MAP[k]; });
+      allSheets.push(DEFAULT_SHEET);
+      for (var s = 0; s < allSheets.length; s++) {
+        var nm = allSheets[s];
+        var sheet = ss2.getSheetByName(nm);
+        if (!sheet) { payload[nm] = []; continue; }
+        var last = sheet.getLastRow();
+        if (last < 2) { payload[nm] = []; continue; }
+        var values = sheet.getRange(2, 1, last - 1, HEADERS.length).getValues();
+        payload[nm] = values.map(function(row, idx) {
+          var obj = { rowIndex: idx + 2, data: {} };
+          for (var j = 0; j < HEADERS.length; j++) {
+            var v = row[j];
+            if (v instanceof Date) {
+              v = Utilities.formatDate(v, "Asia/Karachi", "yyyy-MM-dd");
+            }
+            obj.data[HEADERS[j]] = (v === null || v === undefined) ? "" : String(v);
+          }
+          return obj;
+        });
+      }
+      return json({ok:true, sheets: payload, headers: HEADERS});
+    }
+
+    /* -------- UPDATE (dashboard edit) -------- */
+    if (action === "update") {
+      var exp3 = getSetupSecret();
+      if (!exp3 || key !== exp3) return json({ok:false, error:"Unauthorized"});
+      var targetSheetName = body.sheet;
+      var rowIndex = parseInt(body.rowIndex, 10);
+      var data = body.data || {};
+      if (!targetSheetName || !rowIndex || rowIndex < 2) return json({ok:false, error:"Invalid sheet or row"});
+      var ss3 = SpreadsheetApp.getActiveSpreadsheet();
+      var target = ss3.getSheetByName(targetSheetName);
+      if (!target) return json({ok:false, error:"Sheet not found: " + targetSheetName});
+      if (rowIndex > target.getLastRow()) return json({ok:false, error:"Row out of range"});
+      var rowVals = HEADERS.map(function(h) { return sanitizeCell(data[h] || ""); });
+      target.getRange(rowIndex, 1, 1, HEADERS.length).setValues([rowVals]);
+      return json({ok:true, message:"Row #" + rowIndex + " updated in " + targetSheetName});
+    }
+
+    /* -------- DELETE -------- */
+    if (action === "delete") {
+      var exp4 = getSetupSecret();
+      if (!exp4 || key !== exp4) return json({ok:false, error:"Unauthorized"});
+      var delSheetName = body.sheet;
+      var delIndex = parseInt(body.rowIndex, 10);
+      if (!delSheetName || !delIndex || delIndex < 2) return json({ok:false, error:"Invalid sheet or row"});
+      var ss4 = SpreadsheetApp.getActiveSpreadsheet();
+      var delSheet = ss4.getSheetByName(delSheetName);
+      if (!delSheet) return json({ok:false, error:"Sheet not found"});
+      if (delIndex > delSheet.getLastRow()) return json({ok:false, error:"Row out of range"});
+      delSheet.deleteRow(delIndex);
+      return json({ok:true, message:"Row deleted"});
+    }
+
+    /* -------- SUBMIT (public form) -------- */
+    if (action === "submit") {
+      var data2 = body.data || {};
+      var taluka = data2["Taluka"] || "";
+      var targetName = sheetNameFor(taluka);
+      ensureSheetStructure(targetName);
+      var ssS = SpreadsheetApp.getActiveSpreadsheet();
+      var sheetS = ssS.getSheetByName(targetName);
+
+      var required = HEADERS.filter(function(h) {
+        return h !== "Submission Timestamp"
+            && h !== "Date of Regularization"
+            && h.indexOf("Manual") === -1
+            && h !== "Remarks";
+      });
+      for (var r = 0; r < required.length; r++) {
+        if (!data2[required[r]]) return json({ok:false, error:"Missing required field: " + required[r]});
+      }
+
+      var cnicRaw = String(data2["CNIC Number"] || "").replace(/[^0-9]/g, "");
+      var cache = CacheService.getScriptCache();
+      var dedupKey = "sub_" + targetName + "_" + cnicRaw;
+      if (cnicRaw && cache.get(dedupKey)) {
+        return json({ok:false, error:"Duplicate submission detected for this CNIC in the " + taluka + " taluka. Please wait 60 seconds."});
+      }
+      var rlKey = "rl_" + Math.floor(Date.now() / 60000);
+      var count = parseInt(cache.get(rlKey) || "0", 10);
+      if (count >= 120) return json({ok:false, error:"Too many submissions. Please try again shortly."});
+
+      var rowS = HEADERS.map(function(h) {
+        if (h === "Submission Timestamp") {
+          return new Date().toLocaleString("en-PK", {timeZone: "Asia/Karachi"});
+        }
+        return sanitizeCell(data2[h] || "");
+      });
+      sheetS.appendRow(rowS);
+
+      if (cnicRaw) cache.put(dedupKey, "1", 60);
+      cache.put(rlKey, String(count + 1), 120);
+
+      return json({ok:true, id: Utilities.getUuid().slice(0,8).toUpperCase(), sheet: targetName, message:"Recorded"});
+    }
+
+    return json({ok:false, error:"Unknown action"});
+  } catch(err) {
+    return json({ok:false, error: err.toString()});
+  } finally {
+    try { lock.releaseLock(); } catch(e) {}
+  }
+}
+
+function doGet(e) {
+  return json({status:"online", time: new Date().toISOString()});
+}`;
+  })();
+
+  function AdminApp() {
+    const { secret, authed, login, logout } = useSession();
+    const [scriptUrl, setScriptUrl] = useState("");
+    const [loginError, setLoginError] = useState("");
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [view, setView] = useState("overview");
+
+    const [entries, setEntries] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [loadError, setLoadError] = useState(null);
+    const [refreshing, setRefreshing] = useState(false);
+
+    const [talukaFilter, setTalukaFilter] = useState("all");
+    const [openEntry, setOpenEntry] = useState(null);
+    const [pendingDelete, setPendingDelete] = useState(null);
+    const [deleting, setDeleting] = useState(false);
+    const [toasts, setToasts] = useState([]);
+    const [settingsStatus, setSettingsStatus] = useState("");
+
+    /* Toast helper */
+    const pushToast = (message, type = "success") => {
+      const id = Math.random().toString(36).slice(2, 8);
+      setToasts(t => [...t, { id, message, type }]);
+      setTimeout(() => setToasts(t => t.filter(x => x.id !== id)), 3800);
+    };
+    const dismissToast = id => setToasts(t => t.filter(x => x.id !== id));
+
+    /* Load stored script URL */
+    useEffect(() => {
+      try {
+        const saved = localStorage.getItem("sba_script_url");
+        if (saved) setScriptUrl(saved);
+      } catch {}
+    }, []);
+
+    /* Fetch entries when authed + url + secret ready */
+    const fetchEntries = async (isRefresh) => {
+      if (!scriptUrl || !secret) return;
+      if (isRefresh) setRefreshing(true); else setLoading(true);
+      setLoadError(null);
+      try {
+        const res = await fetch(scriptUrl, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({ action: "list", key: secret })
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        if (!data.ok) throw new Error(data.error || "Failed to load submissions");
+        setEntries(data.sheets || {});
+      } catch (err) {
+        setLoadError(err.message || "Failed to load submissions");
+        if (isRefresh) pushToast(err.message || "Failed to refresh", "error");
+      } finally {
+        setLoading(false);
+        setRefreshing(false);
+      }
+    };
+
+    useEffect(() => {
+      if (authed && scriptUrl && secret) {
+        fetchEntries(false);
+      }
+      // eslint-disable-next-line
+    }, [authed, scriptUrl, secret]);
+
+    const counts = useMemo(() => {
+      const c = {};
+      Object.keys(TALUKA_SHEETS).forEach(t => {
+        c[TALUKA_SHEETS[t]] = entries?.[TALUKA_SHEETS[t]]?.length || 0;
+      });
+      return c;
+    }, [entries]);
+
+    const totalCount = useMemo(() => Object.values(counts).reduce((a, b) => a + b, 0), [counts]);
+
+    /* Delete flow */
+    const requestDelete = (entry) => setPendingDelete(entry);
+    const cancelDelete = () => { if (!deleting) setPendingDelete(null); };
+
+    const confirmDelete = async () => {
+      if (!pendingDelete) return;
+      setDeleting(true);
+      try {
+        const res = await fetch(scriptUrl, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({
+            action: "delete",
+            key: secret,
+            sheet: pendingDelete.sheet,
+            rowIndex: pendingDelete.rowIndex
+          })
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        if (!data.ok) throw new Error(data.error || "Delete failed");
+        pushToast("Entry deleted.", "success");
+        setPendingDelete(null);
+        setOpenEntry(null);
+        setEntries(null);
+        fetchEntries(true);
+      } catch (err) {
+        pushToast(err.message || "Delete failed", "error");
+      } finally {
+        setDeleting(false);
+      }
+    };
+
+    /* CSV export */
+    const exportCSV = (rows) => {
+      if (!rows || rows.length === 0) { pushToast("No rows to export.", "error"); return; }
+      const headers = SHEET_HEADERS.filter(h => h !== "Submission Timestamp").concat(["Submission Timestamp"]);
+      const escape = v => {
+        const s = String(v == null ? "" : v);
+        return '"' + s.replace(/"/g, '""') + '"';
+      };
+      const lines = [headers.map(escape).join(",")];
+      rows.forEach(r => {
+        const d = r.data || {};
+        lines.push(headers.map(h => escape(d[h] || "")).join(","));
+      });
+      const blob = new Blob(["\uFEFF" + lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `pst-seniority-export-${new Date().toISOString().slice(0,10)}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      pushToast(`Exported ${rows.length} record${rows.length === 1 ? "" : "s"}.`, "success");
+    };
+
+    /* Auth gate */
+    if (!authed) {
+      return html`
+        <${LoginScreen}
+          scriptUrl=${scriptUrl}
+          setScriptUrl=${setScriptUrl}
+          onLogin=${login}
+          error=${loginError}
+          setError=${setLoginError}
+        />
+      `;
+    }
+
+    /* Header title/subtitle based on view */
+    const titles = {
+      overview:    { t: "Overview",        s: "Dashboard" },
+      submissions: { t: "Submissions",     s: "Records" },
+      talukas:     { t: "Taluka Views",    s: "Breakdown" },
+      settings:    { t: "Settings",        s: "Configuration" }
+    };
+
+    return html`
+      <div className="min-h-screen bg-[#F8FAFC] text-[#0F172A] overflow-x-hidden">
+        <${Sidebar}
+          open=${sidebarOpen}
+          onClose=${() => setSidebarOpen(false)}
+          active=${view}
+          onNavigate=${setView}
+          onLogout=${() => { logout(); setEntries(null); }}
+        />
+
+        <div className="lg:ml-64 min-h-screen flex flex-col">
+          <${Topbar}
+            title=${titles[view].t}
+            subtitle=${titles[view].s}
+            onMenuToggle=${() => setSidebarOpen(v => !v)}
+            onRefresh=${() => fetchEntries(true)}
+            refreshing=${refreshing}
+            onExportAll=${view === "submissions" ? null : null}
+          />
+
+          <main className="flex-1 px-4 md:px-6 py-6">
+            ${view === "overview" && html`
+              <${OverviewView}
+                entries=${entries}
+                loading=${loading}
+                counts=${counts}
+                totalCount=${totalCount}
+                onNavigate=${setView}
+                onEditEntry=${setOpenEntry}
+              />
+            `}
+            ${view === "submissions" && html`
+              <${SubmissionsView}
+                entries=${entries}
+                loading=${loading}
+                loadError=${loadError}
+                onReload=${() => fetchEntries(true)}
+                talukaFilter=${talukaFilter}
+                setTalukaFilter=${setTalukaFilter}
+                onOpenEntry=${setOpenEntry}
+                onExportEntry=${exportEntryPdf}
+                onDeleteEntry=${requestDelete}
+                onExportCSV=${exportCSV}
+              />
+            `}
+            ${view === "talukas" && html`
+              <${TalukasView} entries=${entries} onNavigate=${setView} />
+            `}
+            ${view === "settings" && html`
+              <${SettingsView}
+                scriptUrl=${scriptUrl}
+                setScriptUrl=${setScriptUrl}
+                secret=${secret}
+                setSecret=${() => {}}
+                status=${settingsStatus}
+                setStatus=${setSettingsStatus}
+                scriptCode=${APPS_SCRIPT_CODE}
+                onLogout=${() => { logout(); setEntries(null); }}
+              />
+            `}
+          </main>
+
+          <footer className="px-6 py-4 border-t border-slate-200 text-[11px] text-slate-400 flex items-center justify-between">
+            <span>PST Seniority Admin — District Shaheed Benazir Abad</span>
+            <span>© ${new Date().getFullYear()} District Education Office</span>
+          </footer>
+        </div>
+
+        ${openEntry && html`
+          <${EntryDetailModal}
+            entry=${openEntry}
+            scriptUrl=${scriptUrl}
+            secret=${secret}
+            onClose=${() => setOpenEntry(null)}
+            onSaved=${() => { setEntries(null); fetchEntries(true); }}
+            onDelete=${requestDelete}
+            onExport=${exportEntryPdf}
+            pushToast=${pushToast}
+          />
+        `}
+
+        <${ConfirmDialog}
+          open=${!!pendingDelete}
+          title="Delete this record?"
+          message=${pendingDelete
+            ? `This will permanently remove the row for "${pendingDelete.data["Full Name"] || "Unnamed"}" from ${pendingDelete.sheet}. This cannot be undone.`
+            : ""}
+          confirmLabel="Delete Permanently"
+          danger=${true}
+          onConfirm=${confirmDelete}
+          onCancel=${cancelDelete}
+          busy=${deleting}
+        />
+
+        <${ToastStack} toasts=${toasts} onDismiss=${dismissToast} />
+      </div>
+    `;
+  }
+
+  ReactDOM.createRoot(document.getElementById("root")).render(
+    html`<${React.StrictMode}><${AdminApp} /><//>`
+  );
+  </script>
+</body>
+</html>
