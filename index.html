@@ -799,8 +799,8 @@
     `;
   }
 
-  function SuccessScreen({ id, taluka, onNew, onDone }) {
-    const sheetName = TALUKA_SHEETS[taluka] || TALUKA_SHEETS["Others"];
+  function SuccessScreen({ id, taluka, sheet, onNew, onDone }) {
+    const sheetName = sheet || TALUKA_SHEETS[taluka] || TALUKA_SHEETS["Others"];
     return html`
       <div className="min-h-screen bg-[#F8FAFC] flex items-center justify-center p-4 overflow-x-hidden">
         <div className="bg-white rounded-[2rem] shadow-[0_20px_60px_-12px_rgba(15,23,42,0.15)] max-w-[520px] w-full p-8 md:p-10 text-center border border-slate-100">
@@ -1410,7 +1410,7 @@
       }, { threshold: 0.15 });
       document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
       return () => observer.disconnect();
-    }, []);
+    }, [success]);
 
     const navigate = id => {
       setActiveSection(id);
@@ -1443,7 +1443,7 @@
         if (!res.ok) throw new Error(`Server responded with HTTP ${res.status}`);
         const data = await res.json();
         if (!data.ok) throw new Error(data.error || "The server rejected this submission.");
-        setSuccess({ id: data.id, taluka: data.sheet || form.taluka });
+        setSuccess({ id: data.id, taluka: form.taluka, sheet: data.sheet });
         try { sessionStorage.removeItem("sba_form_draft"); } catch {}
       } catch (err) {
         setSubmitError(err.message || "An unexpected error occurred.");
@@ -1453,18 +1453,20 @@
     };
 
     const triggerShake = () => { setShake(true); setTimeout(() => setShake(false), 500); };
-    const resetForm = () => {
+      const resetForm = () => {
       setSuccess(null);
       setForm(EMPTY_FORM);
       setStep(1);
       try { sessionStorage.removeItem("sba_form_draft"); } catch {}
+      setTimeout(() => window.scrollTo(0, 0), 0);
     };
 
-    if (success) {
+      if (success) {
       return html`
         <${SuccessScreen}
           id=${success.id}
           taluka=${success.taluka}
+          sheet=${success.sheet}
           onNew=${resetForm}
           onDone=${resetForm}
         />
